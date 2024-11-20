@@ -1,0 +1,98 @@
+id	start	end	patient_id	type_code	type_display	reason_code	reason_display	location_id	location_display
+enc_1	12/23/2013 12:13:09 PM	12/23/2013 12:28:09 PM	pat_1	185345009	Encounter for symptom	195662009	Acute viral pharyngitis (disorder)	location_1	FRANCISCAN HOSPITAL FOR CHILDREN INC
+enc_2	01/01/2014 11:13:09 AM	01/01/2014 12:02:52 PM	pat_1	702927004	Urgent care clinic (environment)	126598008	Neoplasm of connective tissues disorder	location_2	PATRIOT URGENT CARE PROFESSIONALS PC
+enc_3	01/08/2014 11:13:09 AM	01/08/2014 11:28:09 AM	pat_1	185349003	Encounter for check up (procedure)	126598008	Neoplasm of connective tissues disorder	location_1	FRANCISCAN HOSPITAL FOR CHILDREN INC
+enc_4	04/16/2014 12:13:09 PM	04/16/2014 01:01:32 PM	pat_1	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_3	PERSONAL PHYSICIANS HEALTHCARE PC
+enc_5	04/22/2015 12:13:09 PM	04/22/2015 12:46:00 PM	pat_1	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_3	PERSONAL PHYSICIANS HEALTHCARE PC
+enc_6	04/27/2016 12:13:09 PM	04/27/2016 01:01:57 PM	pat_1	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_3	PERSONAL PHYSICIANS HEALTHCARE PC
+enc_7	05/03/2017 12:13:09 PM	05/03/2017 12:43:36 PM	pat_1	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_3	PERSONAL PHYSICIANS HEALTHCARE PC
+enc_8	05/09/2018 12:13:09 PM	05/09/2018 12:58:10 PM	pat_1	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_3	PERSONAL PHYSICIANS HEALTHCARE PC
+enc_9	05/15/2019 12:13:09 PM	05/15/2019 12:46:00 PM	pat_1	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_3	PERSONAL PHYSICIANS HEALTHCARE PC
+enc_10	05/20/2020 12:13:09 PM	05/20/2020 12:46:05 PM	pat_1	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_3	PERSONAL PHYSICIANS HEALTHCARE PC
+enc_11	03/06/2016 08:35:07 PM	03/06/2016 09:00:53 PM	pat_2	698314001	Consultation for treatment	389095005	Contraception care (regime/therapy)	location_4	HEBREW REHABILITATION CENTER
+enc_12	10/29/2019 09:35:07 PM	10/29/2019 10:06:11 PM	pat_2	698314001	Consultation for treatment	389095005	Contraception care (regime/therapy)	location_4	HEBREW REHABILITATION CENTER
+enc_13	10/06/2015 09:35:07 PM	10/06/2015 10:18:02 PM	pat_2	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_3	PERSONAL PHYSICIANS HEALTHCARE PC
+enc_14	10/09/2018 09:35:07 PM	10/09/2018 10:15:46 PM	pat_2	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_3	PERSONAL PHYSICIANS HEALTHCARE PC
+enc_15	01/29/2019 08:35:07 PM	01/29/2019 11:15:12 PM	pat_2	185347001	Encounter for problem	271737000	Anemia (disorder)	location_5	HEBREW SENIORLIFE AFFILIATED MEDICAL GROUP INC
+enc_16	01/30/2019 11:15:12 PM	01/30/2019 11:30:12 PM	pat_2	185347001	Encounter for problem	271737000	Anemia (disorder)	location_5	HEBREW SENIORLIFE AFFILIATED MEDICAL GROUP INC
+enc_17	10/12/2021 09:35:07 PM	10/12/2021 10:31:21 PM	pat_2	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_3	PERSONAL PHYSICIANS HEALTHCARE PC
+enc_18	09/20/2005 09:35:07 PM	09/20/2005 10:12:23 PM	pat_2	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_3	PERSONAL PHYSICIANS HEALTHCARE PC
+enc_19	11/29/2005 08:35:07 PM	11/29/2005 08:50:07 PM	pat_2	424441002	Prenatal initial visit	72892002	Normal pregnancy	location_5	HEBREW SENIORLIFE AFFILIATED MEDICAL GROUP INC
+enc_20	09/26/2006 09:35:07 PM	09/26/2006 10:20:51 PM	pat_2	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_3	PERSONAL PHYSICIANS HEALTHCARE PC
+enc_21	07/01/2014 02:50:16 AM	07/01/2014 03:39:48 AM	pat_3	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_6	NEW ENGLAND PROFESSIONAL HOME HEALTH CARE LLC
+enc_22	07/04/2017 02:50:16 AM	07/04/2017 03:25:50 AM	pat_3	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_6	NEW ENGLAND PROFESSIONAL HOME HEALTH CARE LLC
+enc_23	07/07/2020 02:50:16 AM	07/07/2020 03:42:38 AM	pat_3	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_6	NEW ENGLAND PROFESSIONAL HOME HEALTH CARE LLC
+enc_24	07/11/2023 02:50:16 AM	07/11/2023 03:44:21 AM	pat_3	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_6	NEW ENGLAND PROFESSIONAL HOME HEALTH CARE LLC
+enc_25	07/18/2023 02:50:16 AM	07/18/2023 04:05:18 AM	pat_3	185347001	Encounter for problem	271737000	Anemia (disorder)	location_7	TUFTS MEDICAL CENTER
+enc_26	07/10/1990 02:50:16 AM	07/10/1990 03:05:16 AM	pat_3	185347001	Encounter for problem	412071004	Wheat (substance)	location_7	TUFTS MEDICAL CENTER
+enc_27	07/18/1990 04:50:16 AM	07/18/1990 05:18:42 AM	pat_3	185347001	Encounter for problem	419199007	Allergy to substance (finding)	location_7	TUFTS MEDICAL CENTER
+enc_28	06/19/2007 02:50:16 AM	06/19/2007 03:28:19 AM	pat_3	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_6	NEW ENGLAND PROFESSIONAL HOME HEALTH CARE LLC
+enc_29	03/24/2009 02:50:16 AM	03/24/2009 03:50:16 AM	pat_3	50849002	Emergency room admission (procedure)	74400008	Appendicitis	location_8	ALLIANCE HEALTH AT ROSEWOOD
+enc_30	03/24/2009 02:50:16 AM	03/28/2009 02:44:50 AM	pat_3	185347001	Encounter for problem (procedure)	74400008	Appendicitis	location_7	TUFTS MEDICAL CENTER
+enc_31	09/18/2022 11:23:34 AM	09/18/2022 11:38:34 AM	pat_4	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_9	WHITLEY WELLNESS LLC
+enc_32	10/23/2022 11:23:34 AM	10/23/2022 11:38:34 AM	pat_4	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_9	WHITLEY WELLNESS LLC
+enc_33	12/25/2022 10:23:34 AM	12/25/2022 10:38:34 AM	pat_4	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_9	WHITLEY WELLNESS LLC
+enc_34	02/26/2023 10:23:34 AM	02/26/2023 10:38:34 AM	pat_4	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_9	WHITLEY WELLNESS LLC
+enc_35	05/28/2023 11:23:34 AM	05/28/2023 11:38:34 AM	pat_4	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_9	WHITLEY WELLNESS LLC
+enc_36	08/27/2023 11:23:34 AM	08/27/2023 11:38:34 AM	pat_4	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_9	WHITLEY WELLNESS LLC
+enc_37	11/26/2023 10:23:34 AM	11/26/2023 10:38:34 AM	pat_4	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_9	WHITLEY WELLNESS LLC
+enc_38	09/01/2014 12:38:29 PM	09/01/2014 04:03:29 PM	pat_5	50849002	Emergency room admission (procedure)	241929008	Acute allergic reaction	location_10	LIFE CARE CENTER OF ATTLEBORO
+enc_39	04/12/2014 12:38:29 AM	04/12/2014 12:53:29 AM	pat_5	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_11	FAMILY MEDICINE ASSOCIATES OF SOUTH ATTLEBORO, P.C.
+enc_40	10/11/2014 12:38:29 AM	10/11/2014 12:53:29 AM	pat_5	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_11	FAMILY MEDICINE ASSOCIATES OF SOUTH ATTLEBORO, P.C.
+enc_41	04/11/2015 12:38:29 AM	04/11/2015 12:53:29 AM	pat_5	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_11	FAMILY MEDICINE ASSOCIATES OF SOUTH ATTLEBORO, P.C.
+enc_42	04/16/2016 12:38:29 AM	04/16/2016 12:53:29 AM	pat_5	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_11	FAMILY MEDICINE ASSOCIATES OF SOUTH ATTLEBORO, P.C.
+enc_43	04/22/2017 12:38:29 AM	04/22/2017 12:53:29 AM	pat_5	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_11	FAMILY MEDICINE ASSOCIATES OF SOUTH ATTLEBORO, P.C.
+enc_44	04/28/2018 12:38:29 AM	04/28/2018 12:53:29 AM	pat_5	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_11	FAMILY MEDICINE ASSOCIATES OF SOUTH ATTLEBORO, P.C.
+enc_45	02/22/2019 11:38:29 PM	02/22/2019 11:53:29 PM	pat_5	702927004	Urgent care clinic (environment)	126598008	Neoplasm of connective tissues disorder	location_12	WOONSOCKET URGENT CARE PC
+enc_46	03/01/2019 11:38:29 PM	03/01/2019 11:53:29 PM	pat_5	185349003	Encounter for check up (procedure)	126598008	Neoplasm of connective tissues disorder	location_13	ARBOUR-FULLER HOSPITAL
+enc_47	05/04/2019 12:38:29 AM	05/04/2019 12:53:29 AM	pat_5	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_11	FAMILY MEDICINE ASSOCIATES OF SOUTH ATTLEBORO, P.C.
+enc_48	09/26/2014 12:28:02 PM	09/26/2014 12:43:02 PM	pat_6	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_14	CARING HEALTH CENTER, INC
+enc_49	10/02/2015 12:28:02 PM	10/02/2015 12:43:02 PM	pat_6	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_14	CARING HEALTH CENTER, INC
+enc_50	10/07/2016 12:28:02 PM	10/07/2016 12:43:02 PM	pat_6	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_14	CARING HEALTH CENTER, INC
+enc_51	10/13/2017 12:28:02 PM	10/13/2017 12:43:02 PM	pat_6	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_14	CARING HEALTH CENTER, INC
+enc_52	10/19/2018 12:28:02 PM	10/19/2018 12:43:02 PM	pat_6	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_14	CARING HEALTH CENTER, INC
+enc_53	10/25/2019 12:28:02 PM	10/25/2019 12:43:02 PM	pat_6	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_14	CARING HEALTH CENTER, INC
+enc_54	10/30/2020 12:28:02 PM	10/30/2020 12:43:02 PM	pat_6	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_14	CARING HEALTH CENTER, INC
+enc_55	11/05/2021 12:28:02 PM	11/05/2021 12:43:02 PM	pat_6	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_14	CARING HEALTH CENTER, INC
+enc_56	11/11/2022 11:28:02 AM	11/11/2022 11:43:02 AM	pat_6	410620009	Well child visit (procedure)	126598008	Neoplasm of connective tissues disorder	location_14	CARING HEALTH CENTER, INC
+enc_57	01/15/2023 12:28:02 PM	01/15/2023 12:43:02 PM	pat_6	185345009	Encounter for symptom	195662009	Acute viral pharyngitis (disorder)	location_15	VIBRA HOSPITAL OF WESTERN MASS - CENTRAL CAMPUS
+enc_58	02/03/2014 06:39:01 PM	02/03/2014 07:29:35 PM	pat_7	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_16	ZION HEALTH & WELLNESS LLC
+enc_59	02/09/2015 06:39:01 PM	02/09/2015 07:37:31 PM	pat_7	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_16	ZION HEALTH & WELLNESS LLC
+enc_60	02/15/2016 06:39:01 PM	02/15/2016 07:31:28 PM	pat_7	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_16	ZION HEALTH & WELLNESS LLC
+enc_61	02/20/2017 06:39:01 PM	02/20/2017 07:38:55 PM	pat_7	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_16	ZION HEALTH & WELLNESS LLC
+enc_62	02/26/2018 06:39:01 PM	02/26/2018 07:09:49 PM	pat_7	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_16	ZION HEALTH & WELLNESS LLC
+enc_63	01/21/2019 06:39:01 PM	01/21/2019 07:38:45 PM	pat_7	185349003	Encounter for check up (procedure)	126598008	Neoplasm of connective tissues disorder	location_17	ENCOMPASS HEALTH BRAINTREE HOSPITAL OF BRAINTREE
+enc_64	03/04/2019 06:39:01 PM	03/04/2019 07:17:08 PM	pat_7	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_16	ZION HEALTH & WELLNESS LLC
+enc_65	03/09/2020 07:39:01 PM	03/09/2020 08:10:09 PM	pat_7	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_16	ZION HEALTH & WELLNESS LLC
+enc_66	03/15/2021 07:39:01 PM	03/15/2021 08:14:11 PM	pat_7	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_16	ZION HEALTH & WELLNESS LLC
+enc_67	03/21/2022 07:39:01 PM	03/21/2022 08:24:05 PM	pat_7	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_16	ZION HEALTH & WELLNESS LLC
+enc_68	12/18/2013 10:04:00 PM	12/18/2013 10:22:31 PM	pat_8	698314001	Consultation for treatment	389095005	Contraception care (regime/therapy)	location_18	AP MEDICAL LLC
+enc_69	11/27/2017 10:22:31 PM	11/27/2017 10:40:16 PM	pat_8	698314001	Consultation for treatment	389095005	Contraception care (regime/therapy)	location_18	AP MEDICAL LLC
+enc_70	04/13/2014 10:39:24 PM	04/13/2014 11:24:26 PM	pat_8	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_19	DARTMOUTH PRIMARY MEDICINE, LLC
+enc_71	04/19/2015 10:39:24 PM	04/19/2015 11:09:50 PM	pat_8	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_19	DARTMOUTH PRIMARY MEDICINE, LLC
+enc_72	04/24/2016 10:39:24 PM	04/24/2016 11:36:45 PM	pat_8	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_19	DARTMOUTH PRIMARY MEDICINE, LLC
+enc_73	04/30/2017 10:39:24 PM	04/30/2017 11:09:27 PM	pat_8	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_19	DARTMOUTH PRIMARY MEDICINE, LLC
+enc_74	05/06/2018 10:39:24 PM	05/06/2018 11:26:09 PM	pat_8	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_19	DARTMOUTH PRIMARY MEDICINE, LLC
+enc_75	05/12/2019 10:39:24 PM	05/12/2019 11:20:29 PM	pat_8	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_19	DARTMOUTH PRIMARY MEDICINE, LLC
+enc_76	05/17/2020 10:39:24 PM	05/17/2020 11:28:26 PM	pat_8	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_19	DARTMOUTH PRIMARY MEDICINE, LLC
+enc_77	05/23/2021 10:39:24 PM	05/23/2021 11:32:50 PM	pat_8	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_19	DARTMOUTH PRIMARY MEDICINE, LLC
+enc_78	10/05/2019 02:48:13 PM	10/13/2019 12:48:13 AM	pat_9	185347001	Encounter for problem	91302008	Sepsis (disorder)	location_20	HORIZON HOME CARE, LLC
+enc_79	11/14/2014 01:48:13 PM	11/14/2014 02:37:05 PM	pat_9	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_21	GREATER LAWRENCE FAMILY HEALTH CENTER INC
+enc_80	02/15/2017 01:48:13 PM	02/15/2017 02:03:13 PM	pat_9	185345009	Encounter for symptom	195662009	Acute viral pharyngitis (disorder)	location_22	TEWKSBURY HOSPITAL
+enc_81	02/24/2017 01:48:13 PM	02/24/2017 02:38:38 PM	pat_9	185349003	Encounter for check up (procedure)	126598008	Neoplasm of connective tissues disorder	location_22	TEWKSBURY HOSPITAL
+enc_82	11/17/2017 01:48:13 PM	11/17/2017 02:43:22 PM	pat_9	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_21	GREATER LAWRENCE FAMILY HEALTH CENTER INC
+enc_83	02/09/2020 05:04:34 AM	02/18/2020 05:04:34 AM	pat_9	56876005	Drug rehabilitation and detoxification	6525002	Dependent drug abuse (disorder)	location_22	TEWKSBURY HOSPITAL
+enc_84	11/20/2020 01:48:13 PM	11/20/2020 02:25:22 PM	pat_9	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_21	GREATER LAWRENCE FAMILY HEALTH CENTER INC
+enc_85	01/13/2021 01:48:13 PM	01/13/2021 02:56:21 PM	pat_9	185345009	Encounter for symptom (procedure)	840544004	Suspected COVID-19	location_22	TEWKSBURY HOSPITAL
+enc_86	05/21/2021 12:20:52 PM	06/03/2021 12:20:52 PM	pat_9	56876005	Drug rehabilitation and detoxification	6525002	Dependent drug abuse (disorder)	location_22	TEWKSBURY HOSPITAL
+enc_87	10/28/2021 12:20:52 PM	11/05/2021 12:20:52 PM	pat_9	56876005	Drug rehabilitation and detoxification	6525002	Dependent drug abuse (disorder)	location_22	TEWKSBURY HOSPITAL
+enc_88	04/20/2014 07:58:48 AM	04/20/2014 08:51:15 AM	pat_10	185349003	Encounter for check up (procedure)	126598008	Neoplasm of connective tissues disorder	location_23	ENCOMPASS HEALTH REHAB HOSPITAL OF WESTERN MASS
+enc_89	06/22/2014 07:58:48 AM	06/22/2014 08:40:10 AM	pat_10	185349003	Encounter for check up (procedure)	126598008	Neoplasm of connective tissues disorder	location_23	ENCOMPASS HEALTH REHAB HOSPITAL OF WESTERN MASS
+enc_90	09/28/2014 07:58:48 AM	09/28/2014 08:37:42 AM	pat_10	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_14	CARING HEALTH CENTER, INC
+enc_91	10/04/2015 07:58:48 AM	10/04/2015 08:44:48 AM	pat_10	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_14	CARING HEALTH CENTER, INC
+enc_92	10/09/2016 07:58:48 AM	10/09/2016 08:49:50 AM	pat_10	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_14	CARING HEALTH CENTER, INC
+enc_93	10/15/2017 07:58:48 AM	10/15/2017 08:57:54 AM	pat_10	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_14	CARING HEALTH CENTER, INC
+enc_94	10/21/2018 07:58:48 AM	10/21/2018 08:40:10 AM	pat_10	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_14	CARING HEALTH CENTER, INC
+enc_95	10/27/2019 07:58:48 AM	10/27/2019 08:40:46 AM	pat_10	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_14	CARING HEALTH CENTER, INC
+enc_96	11/01/2020 06:58:48 AM	11/01/2020 07:46:41 AM	pat_10	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_14	CARING HEALTH CENTER, INC
+enc_97	11/07/2021 06:58:48 AM	11/07/2021 07:31:24 AM	pat_10	162673000	General examination of patient (procedure)	126598008	Neoplasm of connective tissues disorder	location_14	CARING HEALTH CENTER, INC

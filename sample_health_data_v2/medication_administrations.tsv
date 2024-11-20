@@ -1,0 +1,8 @@
+id	status	effective	patient_id	encounter_id	medication_code	medication_system	medication_display
+med_admin_1	Completed	10/05/2019 02:48:13 PM	pat_9	enc_78	1659131	http://www.nlm.nih.gov/research/umls/rxnorm	piperacillin 2000 MG / tazobactam 250 MG Injection
+med_admin_2	Completed	10/05/2019 02:48:13 PM	pat_9	enc_78	1807510	http://www.nlm.nih.gov/research/umls/rxnorm	150 ML vancomycin 5 MG/ML Injection
+med_admin_3	Completed	11/27/2017 10:22:31 PM	pat_8	enc_69	1000126	http://www.nlm.nih.gov/research/umls/rxnorm	1 ML medroxyprogesterone acetate 150 MG/ML Injection
+med_admin_4	Completed	12/18/2013 10:04:00 PM	pat_8	enc_68	1000126	http://www.nlm.nih.gov/research/umls/rxnorm	1 ML medroxyPROGESTERone acetate 150 MG/ML Injection
+med_admin_5	Completed	10/29/2019 09:35:07 PM	pat_2	enc_12	389221	http://www.nlm.nih.gov/research/umls/rxnorm	Etonogestrel 68 MG Drug Implant
+med_admin_6	Completed	03/06/2016 08:35:07 PM	pat_2	enc_11	389221	http://www.nlm.nih.gov/research/umls/rxnorm	Etonogestrel 68 MG Drug Implant
+med_admin_7	Completed	09/01/2014 04:03:29 PM	pat_5	enc_38	312617	http://www.nlm.nih.gov/research/umls/rxnorm	predniSONE 5 MG Oral Tablet

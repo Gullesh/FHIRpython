@@ -1,0 +1,24 @@
+id	name	address	city	state	zip_code	status	type_code	type_system	type_display
+location_3	PERSONAL PHYSICIANS HEALTHCARE PC	1244 BOYLSTON ST	CHESTNUT HILL	MA	024672115	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_11	FAMILY MEDICINE ASSOCIATES OF SOUTH ATTLEBORO, P.C.	562 WASHINGTON ST	SOUTH ATTLEBORO	MA	027036942	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_18	AP MEDICAL LLC	909 SUMNER ST	DARTMOUTH	MA	027473826	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_23	ENCOMPASS HEALTH REHAB HOSPITAL OF WESTERN MASS	222 STATE STREET	LUDLOW	MA	010563437	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_7	TUFTS MEDICAL CENTER	800 WASHINGTON STREET	STONEHAM	MA	021802445	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_14	CARING HEALTH CENTER, INC	532 SUMNER AVE	SPRINGFIELD	MA	011082458	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_15	VIBRA HOSPITAL OF WESTERN MASS - CENTRAL CAMPUS	111 HUNTOON MEMORIAL HIGHWAY, 1ST FLOOR	SPRINGFIELD	MA	011092550	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_6	NEW ENGLAND PROFESSIONAL HOME HEALTH CARE LLC	169 LIBERTY ST	MIDDLETON	MA	019491003	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_1	FRANCISCAN HOSPITAL FOR CHILDREN INC	30 WARREN ST	BOSTON	MA	021353602	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_19	DARTMOUTH PRIMARY MEDICINE, LLC	651 ORCHARD ST	NEW BEDFORD	MA	027441052	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_13	ARBOUR-FULLER HOSPITAL	200 MAY ST	SOUTH ATTLEBORO	MA	027035520	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_22	TEWKSBURY HOSPITAL	365 EAST ST	TEWKSBURY	MA	018761950	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_20	HORIZON HOME CARE, LLC	2314 MAIN STREET	TEWKSBURY	MA	018763128	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_10	LIFE CARE CENTER OF ATTLEBORO	969 PARK STREET	ATTLEBORO	MA	027035115	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_8	ALLIANCE HEALTH AT ROSEWOOD	22 JOHNSON STREET	PEABODY	MA	019602311	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_4	HEBREW REHABILITATION CENTER	1200 CENTRE ST	ROSLINDALE	MA	021311000	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_21	GREATER LAWRENCE FAMILY HEALTH CENTER INC	57 RIVER RD	ANDOVER	MA	018101144	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_17	ENCOMPASS HEALTH BRAINTREE HOSPITAL OF BRAINTREE	250 POND STREET	FRAMINGHAM	MA	017014592	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_16	ZION HEALTH & WELLNESS LLC	209 W CENTRAL ST STE 216	NATICK	MA	017603716	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_9	WHITLEY WELLNESS LLC	8 SHIPWAY PL # C-8	CHARLESTOWN	MA	021294301	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_2	PATRIOT URGENT CARE PROFESSIONALS PC	1030 MAIN STREET	WALTHAM	MA	024517447	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_5	HEBREW SENIORLIFE AFFILIATED MEDICAL GROUP INC	1200 CENTRE ST	ROSLINDALE	MA	021311000	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider
+location_12	WOONSOCKET URGENT CARE PC	40 CUMBERLAND AVE	NORTH ATTLEBORO	MA	027604445	ACTIVE	prov	http://terminology.hl7.org/CodeSystem/organization-type	Healthcare Provider

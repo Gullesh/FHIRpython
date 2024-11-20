@@ -1,0 +1,754 @@
+id	effective	patient_id	encounter_id	code	code_display	component_value	component_unit	component_type	category
+obs_1	11/14/2014 01:48:13 PM	pat_9	enc_79	8302-2	Body Height	159.3	cm	numeric	Vital signs
+obs_2	11/14/2014 01:48:13 PM	pat_9	enc_79	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	2	{score}	numeric	Vital signs
+obs_3	11/14/2014 01:48:13 PM	pat_9	enc_79	29463-7	Body Weight	44	kg	numeric	Vital signs
+obs_4	11/14/2014 01:48:13 PM	pat_9	enc_79	39156-5	Body mass index (BMI) [Ratio]	17.34	kg/m2	numeric	Vital signs
+obs_5	11/14/2014 01:48:13 PM	pat_9	enc_79	59576-9	Body mass index (BMI) [Percentile] Per age and sex	2.7588	%	numeric	Vital signs
+obs_6	11/14/2014 01:48:13 PM	pat_9	enc_79	85354-9	Blood pressure panel with all children optional	65	mm[Hg]	numeric	Vital signs
+obs_7	11/14/2014 01:48:13 PM	pat_9	enc_79	8867-4	Heart rate	85	/min	numeric	Vital signs
+obs_8	11/14/2014 01:48:13 PM	pat_9	enc_79	9279-1	Respiratory rate	12	/min	numeric	Vital signs
+obs_9	11/14/2014 01:48:13 PM	pat_9	enc_79	72166-2	Tobacco smoking status				Social history
+obs_10	11/14/2014 02:37:05 PM	pat_9	enc_79	93025-5	Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences [PRAPARE]				Survey
+obs_11	07/04/2017 02:50:16 AM	pat_3	enc_22	8302-2	Body Height	170.6	cm	numeric	Vital signs
+obs_12	07/04/2017 02:50:16 AM	pat_3	enc_22	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_13	07/04/2017 02:50:16 AM	pat_3	enc_22	29463-7	Body Weight	87.8	kg	numeric	Vital signs
+obs_14	07/04/2017 02:50:16 AM	pat_3	enc_22	39156-5	Body mass index (BMI) [Ratio]	30.17	kg/m2	numeric	Vital signs
+obs_15	07/04/2017 02:50:16 AM	pat_3	enc_22	85354-9	Blood pressure panel with all children optional	81	mm[Hg]	numeric	Vital signs
+obs_16	07/04/2017 02:50:16 AM	pat_3	enc_22	8867-4	Heart rate	91	/min	numeric	Vital signs
+obs_17	07/04/2017 02:50:16 AM	pat_3	enc_22	9279-1	Respiratory rate	13	/min	numeric	Vital signs
+obs_18	07/04/2017 02:50:16 AM	pat_3	enc_22	6690-2	Leukocytes [#/volume] in Blood by Automated count	9.3474	10*3/uL	numeric	Laboratory
+obs_19	07/04/2017 02:50:16 AM	pat_3	enc_22	789-8	Erythrocytes [#/volume] in Blood by Automated count	4.506	10*6/uL	numeric	Laboratory
+obs_20	07/04/2017 02:50:16 AM	pat_3	enc_22	718-7	Hemoglobin [Mass/volume] in Blood	13.585	g/dL	numeric	Laboratory
+obs_21	05/21/2021 12:20:52 PM	pat_9	enc_86	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	4	{score}	numeric	Vital signs
+obs_22	02/15/2016 06:39:01 PM	pat_7	enc_60	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	6.18	%	numeric	Laboratory
+obs_23	02/15/2016 06:39:01 PM	pat_7	enc_60	8302-2	Body Height	171.3	cm	numeric	Vital signs
+obs_24	02/15/2016 06:39:01 PM	pat_7	enc_60	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	4	{score}	numeric	Vital signs
+obs_25	02/15/2016 06:39:01 PM	pat_7	enc_60	29463-7	Body Weight	83.8	kg	numeric	Vital signs
+obs_26	02/15/2016 06:39:01 PM	pat_7	enc_60	39156-5	Body mass index (BMI) [Ratio]	28.54	kg/m2	numeric	Vital signs
+obs_27	02/15/2016 06:39:01 PM	pat_7	enc_60	85354-9	Blood pressure panel with all children optional	84	mm[Hg]	numeric	Vital signs
+obs_28	02/15/2016 06:39:01 PM	pat_7	enc_60	8867-4	Heart rate	70	/min	numeric	Vital signs
+obs_29	02/15/2016 06:39:01 PM	pat_7	enc_60	9279-1	Respiratory rate	13	/min	numeric	Vital signs
+obs_30	02/15/2016 06:39:01 PM	pat_7	enc_60	2339-0	Glucose [Mass/volume] in Blood	87.13	mg/dL	numeric	Laboratory
+obs_31	02/15/2016 06:39:01 PM	pat_7	enc_60	6299-2	Urea nitrogen [Mass/volume] in Blood	14.62	mg/dL	numeric	Laboratory
+obs_32	02/22/2019 11:38:29 PM	pat_5	enc_45	8302-2	Body Height	123.5	cm	numeric	Vital signs
+obs_33	02/22/2019 11:38:29 PM	pat_5	enc_45	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	4	{score}	numeric	Vital signs
+obs_34	02/22/2019 11:38:29 PM	pat_5	enc_45	29463-7	Body Weight	22.6	kg	numeric	Vital signs
+obs_35	02/22/2019 11:38:29 PM	pat_5	enc_45	39156-5	Body mass index (BMI) [Ratio]	14.82	kg/m2	numeric	Vital signs
+obs_36	02/22/2019 11:38:29 PM	pat_5	enc_45	59576-9	Body mass index (BMI) [Percentile] Per age and sex	26.251	%	numeric	Vital signs
+obs_37	02/22/2019 11:38:29 PM	pat_5	enc_45	85354-9	Blood pressure panel with all children optional	91	mm[Hg]	numeric	Vital signs
+obs_38	02/22/2019 11:38:29 PM	pat_5	enc_45	8867-4	Heart rate	91	/min	numeric	Vital signs
+obs_39	02/22/2019 11:38:29 PM	pat_5	enc_45	9279-1	Respiratory rate	13	/min	numeric	Vital signs
+obs_40	02/22/2019 11:38:29 PM	pat_5	enc_45	72166-2	Tobacco smoking status				Social history
+obs_41	05/20/2020 12:13:09 PM	pat_1	enc_10	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	6.11	%	numeric	Laboratory
+obs_42	05/20/2020 12:13:09 PM	pat_1	enc_10	8302-2	Body Height	174.7	cm	numeric	Vital signs
+obs_43	05/20/2020 12:13:09 PM	pat_1	enc_10	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	4	{score}	numeric	Vital signs
+obs_44	05/20/2020 12:13:09 PM	pat_1	enc_10	29463-7	Body Weight	91.4	kg	numeric	Vital signs
+obs_45	05/20/2020 12:13:09 PM	pat_1	enc_10	39156-5	Body mass index (BMI) [Ratio]	29.94	kg/m2	numeric	Vital signs
+obs_46	05/20/2020 12:13:09 PM	pat_1	enc_10	85354-9	Blood pressure panel with all children optional	56	mm[Hg]	numeric	Vital signs
+obs_47	05/20/2020 12:13:09 PM	pat_1	enc_10	8867-4	Heart rate	63	/min	numeric	Vital signs
+obs_48	05/20/2020 12:13:09 PM	pat_1	enc_10	9279-1	Respiratory rate	13	/min	numeric	Vital signs
+obs_49	05/20/2020 12:13:09 PM	pat_1	enc_10	2339-0	Glucose [Mass/volume] in Blood	97.42	mg/dL	numeric	Laboratory
+obs_50	05/20/2020 12:13:09 PM	pat_1	enc_10	6299-2	Urea nitrogen [Mass/volume] in Blood	19.59	mg/dL	numeric	Laboratory
+obs_51	05/23/2021 10:39:24 PM	pat_8	enc_77	8302-2	Body Height	166.4	cm	numeric	Vital signs
+obs_52	05/23/2021 10:39:24 PM	pat_8	enc_77	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	4	{score}	numeric	Vital signs
+obs_53	05/23/2021 10:39:24 PM	pat_8	enc_77	29463-7	Body Weight	79.4	kg	numeric	Vital signs
+obs_54	05/23/2021 10:39:24 PM	pat_8	enc_77	39156-5	Body mass index (BMI) [Ratio]	28.67	kg/m2	numeric	Vital signs
+obs_55	05/23/2021 10:39:24 PM	pat_8	enc_77	85354-9	Blood pressure panel with all children optional	96	mm[Hg]	numeric	Vital signs
+obs_56	05/23/2021 10:39:24 PM	pat_8	enc_77	8867-4	Heart rate	90	/min	numeric	Vital signs
+obs_57	05/23/2021 10:39:24 PM	pat_8	enc_77	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_58	05/23/2021 10:39:24 PM	pat_8	enc_77	6690-2	Leukocytes [#/volume] in Blood by Automated count	7.58	10*3/uL	numeric	Laboratory
+obs_59	05/23/2021 10:39:24 PM	pat_8	enc_77	789-8	Erythrocytes [#/volume] in Blood by Automated count	4.0978	10*6/uL	numeric	Laboratory
+obs_60	05/23/2021 10:39:24 PM	pat_8	enc_77	718-7	Hemoglobin [Mass/volume] in Blood	16.497	g/dL	numeric	Laboratory
+obs_61	05/28/2023 11:23:34 AM	pat_4	enc_35	8302-2	Body Height	73.2	cm	numeric	Vital signs
+obs_62	05/28/2023 11:23:34 AM	pat_4	enc_35	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	3	{score}	numeric	Vital signs
+obs_63	05/28/2023 11:23:34 AM	pat_4	enc_35	29463-7	Body Weight	8.6	kg	numeric	Vital signs
+obs_64	05/28/2023 11:23:34 AM	pat_4	enc_35	77606-2	Weight-for-length Per age and sex	15.777	%	numeric	Vital signs
+obs_65	05/28/2023 11:23:34 AM	pat_4	enc_35	8289-1	Head Occipital-frontal circumference Percentile	81.89	%	numeric	Vital signs
+obs_66	05/28/2023 11:23:34 AM	pat_4	enc_35	9843-4	Head Occipital-frontal circumference	46.24	cm	numeric	Vital signs
+obs_67	05/28/2023 11:23:34 AM	pat_4	enc_35	85354-9	Blood pressure panel with all children optional	72	mm[Hg]	numeric	Vital signs
+obs_68	05/28/2023 11:23:34 AM	pat_4	enc_35	8867-4	Heart rate	98	/min	numeric	Vital signs
+obs_69	05/28/2023 11:23:34 AM	pat_4	enc_35	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_70	05/28/2023 11:23:34 AM	pat_4	enc_35	72166-2	Tobacco smoking status				Social history
+obs_71	04/16/2014 12:13:09 PM	pat_1	enc_4	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	5.82	%	numeric	Laboratory
+obs_72	04/16/2014 12:13:09 PM	pat_1	enc_4	8302-2	Body Height	174.7	cm	numeric	Vital signs
+obs_73	04/16/2014 12:13:09 PM	pat_1	enc_4	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_74	04/16/2014 12:13:09 PM	pat_1	enc_4	29463-7	Body Weight	92.2	kg	numeric	Vital signs
+obs_75	04/16/2014 12:13:09 PM	pat_1	enc_4	39156-5	Body mass index (BMI) [Ratio]	30.21	kg/m2	numeric	Vital signs
+obs_76	04/16/2014 12:13:09 PM	pat_1	enc_4	85354-9	Blood pressure panel with all children optional	61	mm[Hg]	numeric	Vital signs
+obs_77	04/16/2014 12:13:09 PM	pat_1	enc_4	8867-4	Heart rate	94	/min	numeric	Vital signs
+obs_78	04/16/2014 12:13:09 PM	pat_1	enc_4	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_79	04/16/2014 12:13:09 PM	pat_1	enc_4	2339-0	Glucose [Mass/volume] in Blood	95.21	mg/dL	numeric	Laboratory
+obs_80	04/16/2014 12:13:09 PM	pat_1	enc_4	6299-2	Urea nitrogen [Mass/volume] in Blood	14.06	mg/dL	numeric	Laboratory
+obs_81	10/23/2022 11:23:34 AM	pat_4	enc_32	8302-2	Body Height	58.7	cm	numeric	Vital signs
+obs_82	10/23/2022 11:23:34 AM	pat_4	enc_32	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	2	{score}	numeric	Vital signs
+obs_83	10/23/2022 11:23:34 AM	pat_4	enc_32	29463-7	Body Weight	4.6	kg	numeric	Vital signs
+obs_84	10/23/2022 11:23:34 AM	pat_4	enc_32	77606-2	Weight-for-length Per age and sex	0.12413	%	numeric	Vital signs
+obs_85	10/23/2022 11:23:34 AM	pat_4	enc_32	8289-1	Head Occipital-frontal circumference Percentile	81.89	%	numeric	Vital signs
+obs_86	10/23/2022 11:23:34 AM	pat_4	enc_32	9843-4	Head Occipital-frontal circumference	40.6	cm	numeric	Vital signs
+obs_87	10/23/2022 11:23:34 AM	pat_4	enc_32	85354-9	Blood pressure panel with all children optional	75	mm[Hg]	numeric	Vital signs
+obs_88	10/23/2022 11:23:34 AM	pat_4	enc_32	8867-4	Heart rate	73	/min	numeric	Vital signs
+obs_89	10/23/2022 11:23:34 AM	pat_4	enc_32	9279-1	Respiratory rate	13	/min	numeric	Vital signs
+obs_90	10/23/2022 11:23:34 AM	pat_4	enc_32	72166-2	Tobacco smoking status				Social history
+obs_91	09/26/2014 12:28:02 PM	pat_6	enc_48	8302-2	Body Height	126.7	cm	numeric	Vital signs
+obs_92	09/26/2014 12:28:02 PM	pat_6	enc_48	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	2	{score}	numeric	Vital signs
+obs_93	09/26/2014 12:28:02 PM	pat_6	enc_48	29463-7	Body Weight	27.8	kg	numeric	Vital signs
+obs_94	09/26/2014 12:28:02 PM	pat_6	enc_48	39156-5	Body mass index (BMI) [Ratio]	17.34	kg/m2	numeric	Vital signs
+obs_95	09/26/2014 12:28:02 PM	pat_6	enc_48	59576-9	Body mass index (BMI) [Percentile] Per age and sex	88.717	%	numeric	Vital signs
+obs_96	09/26/2014 12:28:02 PM	pat_6	enc_48	85354-9	Blood pressure panel with all children optional	80	mm[Hg]	numeric	Vital signs
+obs_97	09/26/2014 12:28:02 PM	pat_6	enc_48	8867-4	Heart rate	68	/min	numeric	Vital signs
+obs_98	09/26/2014 12:28:02 PM	pat_6	enc_48	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_99	09/26/2014 12:28:02 PM	pat_6	enc_48	6690-2	Leukocytes [#/volume] in Blood by Automated count	7.1353	10*3/uL	numeric	Laboratory
+obs_100	09/26/2014 12:28:02 PM	pat_6	enc_48	789-8	Erythrocytes [#/volume] in Blood by Automated count	5.2786	10*6/uL	numeric	Laboratory
+obs_101	01/30/2019 11:15:12 PM	pat_2	enc_16	718-7	Hemoglobin [Mass/volume] in Blood	11.038	g/dL	numeric	Laboratory
+obs_102	01/30/2019 11:15:12 PM	pat_2	enc_16	20570-8	Hematocrit [Volume Fraction] of Blood	33.085	%	numeric	Laboratory
+obs_103	10/28/2021 12:20:52 PM	pat_9	enc_87	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	7	{score}	numeric	Vital signs
+obs_104	02/09/2015 06:39:01 PM	pat_7	enc_59	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	6.36	%	numeric	Laboratory
+obs_105	02/09/2015 06:39:01 PM	pat_7	enc_59	8302-2	Body Height	171.3	cm	numeric	Vital signs
+obs_106	02/09/2015 06:39:01 PM	pat_7	enc_59	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_107	02/09/2015 06:39:01 PM	pat_7	enc_59	29463-7	Body Weight	82.4	kg	numeric	Vital signs
+obs_108	02/09/2015 06:39:01 PM	pat_7	enc_59	39156-5	Body mass index (BMI) [Ratio]	28.08	kg/m2	numeric	Vital signs
+obs_109	02/09/2015 06:39:01 PM	pat_7	enc_59	85354-9	Blood pressure panel with all children optional	87	mm[Hg]	numeric	Vital signs
+obs_110	02/09/2015 06:39:01 PM	pat_7	enc_59	8867-4	Heart rate	87	/min	numeric	Vital signs
+obs_111	02/09/2015 06:39:01 PM	pat_7	enc_59	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_112	02/09/2015 06:39:01 PM	pat_7	enc_59	2339-0	Glucose [Mass/volume] in Blood	89.3	mg/dL	numeric	Laboratory
+obs_113	02/09/2015 06:39:01 PM	pat_7	enc_59	6299-2	Urea nitrogen [Mass/volume] in Blood	12.54	mg/dL	numeric	Laboratory
+obs_114	09/18/2022 11:23:34 AM	pat_4	enc_31	8302-2	Body Height	54.8	cm	numeric	Vital signs
+obs_115	09/18/2022 11:23:34 AM	pat_4	enc_31	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_116	09/18/2022 11:23:34 AM	pat_4	enc_31	29463-7	Body Weight	3.7	kg	numeric	Vital signs
+obs_117	09/18/2022 11:23:34 AM	pat_4	enc_31	77606-2	Weight-for-length Per age and sex	0.16659	%	numeric	Vital signs
+obs_118	09/18/2022 11:23:34 AM	pat_4	enc_31	8289-1	Head Occipital-frontal circumference Percentile	81.89	%	numeric	Vital signs
+obs_119	09/18/2022 11:23:34 AM	pat_4	enc_31	9843-4	Head Occipital-frontal circumference	37.39	cm	numeric	Vital signs
+obs_120	09/18/2022 11:23:34 AM	pat_4	enc_31	85354-9	Blood pressure panel with all children optional	77	mm[Hg]	numeric	Vital signs
+obs_121	09/18/2022 11:23:34 AM	pat_4	enc_31	8867-4	Heart rate	67	/min	numeric	Vital signs
+obs_122	09/18/2022 11:23:34 AM	pat_4	enc_31	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_123	09/18/2022 11:23:34 AM	pat_4	enc_31	6690-2	Leukocytes [#/volume] in Blood by Automated count	7.5845	10*3/uL	numeric	Laboratory
+obs_124	03/21/2022 07:39:01 PM	pat_7	enc_67	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	6.36	%	numeric	Laboratory
+obs_125	03/21/2022 07:39:01 PM	pat_7	enc_67	8302-2	Body Height	171.3	cm	numeric	Vital signs
+obs_126	03/21/2022 07:39:01 PM	pat_7	enc_67	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_127	03/21/2022 07:39:01 PM	pat_7	enc_67	29463-7	Body Weight	80.8	kg	numeric	Vital signs
+obs_128	03/21/2022 07:39:01 PM	pat_7	enc_67	39156-5	Body mass index (BMI) [Ratio]	27.54	kg/m2	numeric	Vital signs
+obs_129	03/21/2022 07:39:01 PM	pat_7	enc_67	85354-9	Blood pressure panel with all children optional	88	mm[Hg]	numeric	Vital signs
+obs_130	03/21/2022 07:39:01 PM	pat_7	enc_67	8867-4	Heart rate	99	/min	numeric	Vital signs
+obs_131	03/21/2022 07:39:01 PM	pat_7	enc_67	9279-1	Respiratory rate	12	/min	numeric	Vital signs
+obs_132	03/21/2022 07:39:01 PM	pat_7	enc_67	2339-0	Glucose [Mass/volume] in Blood	77.45	mg/dL	numeric	Laboratory
+obs_133	03/21/2022 07:39:01 PM	pat_7	enc_67	6299-2	Urea nitrogen [Mass/volume] in Blood	17.64	mg/dL	numeric	Laboratory
+obs_134	02/24/2017 01:48:13 PM	pat_9	enc_81	8302-2	Body Height	159.4	cm	numeric	Vital signs
+obs_135	02/24/2017 01:48:13 PM	pat_9	enc_81	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_136	02/24/2017 01:48:13 PM	pat_9	enc_81	29463-7	Body Weight	47.6	kg	numeric	Vital signs
+obs_137	02/24/2017 01:48:13 PM	pat_9	enc_81	39156-5	Body mass index (BMI) [Ratio]	18.72	kg/m2	numeric	Vital signs
+obs_138	02/24/2017 01:48:13 PM	pat_9	enc_81	85354-9	Blood pressure panel with all children optional	72	mm[Hg]	numeric	Vital signs
+obs_139	02/24/2017 01:48:13 PM	pat_9	enc_81	8867-4	Heart rate	79	/min	numeric	Vital signs
+obs_140	02/24/2017 01:48:13 PM	pat_9	enc_81	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_141	02/24/2017 01:48:13 PM	pat_9	enc_81	6690-2	Leukocytes [#/volume] in Blood by Automated count	5.2775	10*3/uL	numeric	Laboratory
+obs_142	02/24/2017 01:48:13 PM	pat_9	enc_81	789-8	Erythrocytes [#/volume] in Blood by Automated count	4.9582	10*6/uL	numeric	Laboratory
+obs_143	02/24/2017 01:48:13 PM	pat_9	enc_81	718-7	Hemoglobin [Mass/volume] in Blood	15.917	g/dL	numeric	Laboratory
+obs_144	05/03/2017 12:13:09 PM	pat_1	enc_7	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	5.85	%	numeric	Laboratory
+obs_145	05/03/2017 12:13:09 PM	pat_1	enc_7	8302-2	Body Height	174.7	cm	numeric	Vital signs
+obs_146	05/03/2017 12:13:09 PM	pat_1	enc_7	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_147	05/03/2017 12:13:09 PM	pat_1	enc_7	29463-7	Body Weight	92.2	kg	numeric	Vital signs
+obs_148	05/03/2017 12:13:09 PM	pat_1	enc_7	39156-5	Body mass index (BMI) [Ratio]	30.21	kg/m2	numeric	Vital signs
+obs_149	05/03/2017 12:13:09 PM	pat_1	enc_7	85354-9	Blood pressure panel with all children optional	59	mm[Hg]	numeric	Vital signs
+obs_150	05/03/2017 12:13:09 PM	pat_1	enc_7	8867-4	Heart rate	84	/min	numeric	Vital signs
+obs_151	05/03/2017 12:13:09 PM	pat_1	enc_7	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_152	05/03/2017 12:13:09 PM	pat_1	enc_7	2339-0	Glucose [Mass/volume] in Blood	77.58	mg/dL	numeric	Laboratory
+obs_153	05/03/2017 12:13:09 PM	pat_1	enc_7	6299-2	Urea nitrogen [Mass/volume] in Blood	11.42	mg/dL	numeric	Laboratory
+obs_154	11/26/2023 10:23:34 AM	pat_4	enc_37	8302-2	Body Height	80.9	cm	numeric	Vital signs
+obs_155	11/26/2023 10:23:34 AM	pat_4	enc_37	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	4	{score}	numeric	Vital signs
+obs_156	11/26/2023 10:23:34 AM	pat_4	enc_37	29463-7	Body Weight	10.5	kg	numeric	Vital signs
+obs_157	11/26/2023 10:23:34 AM	pat_4	enc_37	77606-2	Weight-for-length Per age and sex	22.206	%	numeric	Vital signs
+obs_158	11/26/2023 10:23:34 AM	pat_4	enc_37	8289-1	Head Occipital-frontal circumference Percentile	81.89	%	numeric	Vital signs
+obs_159	11/26/2023 10:23:34 AM	pat_4	enc_37	9843-4	Head Occipital-frontal circumference	48.22	cm	numeric	Vital signs
+obs_160	11/26/2023 10:23:34 AM	pat_4	enc_37	85354-9	Blood pressure panel with all children optional	79	mm[Hg]	numeric	Vital signs
+obs_161	11/26/2023 10:23:34 AM	pat_4	enc_37	8867-4	Heart rate	73	/min	numeric	Vital signs
+obs_162	11/26/2023 10:23:34 AM	pat_4	enc_37	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_163	11/26/2023 10:23:34 AM	pat_4	enc_37	72166-2	Tobacco smoking status				Social history
+obs_164	12/25/2022 10:23:34 AM	pat_4	enc_33	8302-2	Body Height	64.2	cm	numeric	Vital signs
+obs_165	12/25/2022 10:23:34 AM	pat_4	enc_33	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_166	12/25/2022 10:23:34 AM	pat_4	enc_33	29463-7	Body Weight	6	kg	numeric	Vital signs
+obs_167	12/25/2022 10:23:34 AM	pat_4	enc_33	77606-2	Weight-for-length Per age and sex	1.348	%	numeric	Vital signs
+obs_168	12/25/2022 10:23:34 AM	pat_4	enc_33	8289-1	Head Occipital-frontal circumference Percentile	81.89	%	numeric	Vital signs
+obs_169	12/25/2022 10:23:34 AM	pat_4	enc_33	9843-4	Head Occipital-frontal circumference	43.04	cm	numeric	Vital signs
+obs_170	12/25/2022 10:23:34 AM	pat_4	enc_33	85354-9	Blood pressure panel with all children optional	73	mm[Hg]	numeric	Vital signs
+obs_171	12/25/2022 10:23:34 AM	pat_4	enc_33	8867-4	Heart rate	93	/min	numeric	Vital signs
+obs_172	12/25/2022 10:23:34 AM	pat_4	enc_33	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_173	12/25/2022 10:23:34 AM	pat_4	enc_33	72166-2	Tobacco smoking status				Social history
+obs_174	10/13/2017 12:28:02 PM	pat_6	enc_51	8302-2	Body Height	148.6	cm	numeric	Vital signs
+obs_175	10/13/2017 12:28:02 PM	pat_6	enc_51	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_176	10/13/2017 12:28:02 PM	pat_6	enc_51	29463-7	Body Weight	40	kg	numeric	Vital signs
+obs_177	10/13/2017 12:28:02 PM	pat_6	enc_51	39156-5	Body mass index (BMI) [Ratio]	18.13	kg/m2	numeric	Vital signs
+obs_178	10/13/2017 12:28:02 PM	pat_6	enc_51	59576-9	Body mass index (BMI) [Percentile] Per age and sex	80.774	%	numeric	Vital signs
+obs_179	10/13/2017 12:28:02 PM	pat_6	enc_51	85354-9	Blood pressure panel with all children optional	76	mm[Hg]	numeric	Vital signs
+obs_180	10/13/2017 12:28:02 PM	pat_6	enc_51	8867-4	Heart rate	78	/min	numeric	Vital signs
+obs_181	10/13/2017 12:28:02 PM	pat_6	enc_51	9279-1	Respiratory rate	13	/min	numeric	Vital signs
+obs_182	10/13/2017 12:28:02 PM	pat_6	enc_51	72166-2	Tobacco smoking status				Social history
+obs_183	03/15/2021 07:39:01 PM	pat_7	enc_66	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	5.93	%	numeric	Laboratory
+obs_184	03/15/2021 07:39:01 PM	pat_7	enc_66	8302-2	Body Height	171.3	cm	numeric	Vital signs
+obs_185	03/15/2021 07:39:01 PM	pat_7	enc_66	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_186	03/15/2021 07:39:01 PM	pat_7	enc_66	29463-7	Body Weight	80.8	kg	numeric	Vital signs
+obs_187	03/15/2021 07:39:01 PM	pat_7	enc_66	39156-5	Body mass index (BMI) [Ratio]	27.54	kg/m2	numeric	Vital signs
+obs_188	03/15/2021 07:39:01 PM	pat_7	enc_66	85354-9	Blood pressure panel with all children optional	88	mm[Hg]	numeric	Vital signs
+obs_189	03/15/2021 07:39:01 PM	pat_7	enc_66	8867-4	Heart rate	67	/min	numeric	Vital signs
+obs_190	03/15/2021 07:39:01 PM	pat_7	enc_66	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_191	03/15/2021 07:39:01 PM	pat_7	enc_66	2339-0	Glucose [Mass/volume] in Blood	79.41	mg/dL	numeric	Laboratory
+obs_192	03/15/2021 07:39:01 PM	pat_7	enc_66	6299-2	Urea nitrogen [Mass/volume] in Blood	14.54	mg/dL	numeric	Laboratory
+obs_193	05/09/2018 12:13:09 PM	pat_1	enc_8	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	6.01	%	numeric	Laboratory
+obs_194	05/09/2018 12:13:09 PM	pat_1	enc_8	8302-2	Body Height	174.7	cm	numeric	Vital signs
+obs_195	05/09/2018 12:13:09 PM	pat_1	enc_8	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_196	05/09/2018 12:13:09 PM	pat_1	enc_8	29463-7	Body Weight	92.2	kg	numeric	Vital signs
+obs_197	05/09/2018 12:13:09 PM	pat_1	enc_8	39156-5	Body mass index (BMI) [Ratio]	30.21	kg/m2	numeric	Vital signs
+obs_198	05/09/2018 12:13:09 PM	pat_1	enc_8	85354-9	Blood pressure panel with all children optional	56	mm[Hg]	numeric	Vital signs
+obs_199	05/09/2018 12:13:09 PM	pat_1	enc_8	8867-4	Heart rate	73	/min	numeric	Vital signs
+obs_200	05/09/2018 12:13:09 PM	pat_1	enc_8	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_201	05/09/2018 12:13:09 PM	pat_1	enc_8	2339-0	Glucose [Mass/volume] in Blood	80.68	mg/dL	numeric	Laboratory
+obs_202	05/09/2018 12:13:09 PM	pat_1	enc_8	6299-2	Urea nitrogen [Mass/volume] in Blood	13.86	mg/dL	numeric	Laboratory
+obs_203	04/19/2015 10:39:24 PM	pat_8	enc_71	8302-2	Body Height	166.4	cm	numeric	Vital signs
+obs_204	04/19/2015 10:39:24 PM	pat_8	enc_71	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	4	{score}	numeric	Vital signs
+obs_205	04/19/2015 10:39:24 PM	pat_8	enc_71	29463-7	Body Weight	77.9	kg	numeric	Vital signs
+obs_206	04/19/2015 10:39:24 PM	pat_8	enc_71	39156-5	Body mass index (BMI) [Ratio]	28.15	kg/m2	numeric	Vital signs
+obs_207	04/19/2015 10:39:24 PM	pat_8	enc_71	85354-9	Blood pressure panel with all children optional	94	mm[Hg]	numeric	Vital signs
+obs_208	04/19/2015 10:39:24 PM	pat_8	enc_71	8867-4	Heart rate	70	/min	numeric	Vital signs
+obs_209	04/19/2015 10:39:24 PM	pat_8	enc_71	9279-1	Respiratory rate	12	/min	numeric	Vital signs
+obs_210	04/19/2015 10:39:24 PM	pat_8	enc_71	72166-2	Tobacco smoking status				Social history
+obs_211	04/19/2015 11:09:50 PM	pat_8	enc_71	93025-5	Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences [PRAPARE]				Survey
+obs_212	04/19/2015 11:47:05 PM	pat_8	enc_71	55758-7	Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]	2	{score}	numeric	Survey
+obs_213	10/05/2019 02:48:13 PM	pat_9	enc_78	88262-1	Gram positive blood culture panel by Probe in Positive blood culture				Laboratory
+obs_214	10/05/2019 02:48:13 PM	pat_9	enc_78	44963-7	Capillary refill [Time] of Nail bed				Exam
+obs_215	10/05/2019 02:48:13 PM	pat_9	enc_78	2713-6	Oxygen saturation Calculated from oxygen partial pressure in Blood	92	%	numeric	Vital signs
+obs_216	10/05/2019 02:48:13 PM	pat_9	enc_78	32693-4	Lactate [Moles/volume] in Blood	1.1384	mmol/L	numeric	Laboratory
+obs_217	10/05/2019 03:18:13 PM	pat_9	enc_78	8478-0	Mean blood pressure	91.896	mm[Hg]	numeric	Vital signs
+obs_218	02/09/2020 05:04:34 AM	pat_9	enc_83	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	4	{score}	numeric	Vital signs
+obs_219	04/12/2014 12:38:29 AM	pat_5	enc_39	8302-2	Body Height	92.5	cm	numeric	Vital signs
+obs_220	04/12/2014 12:38:29 AM	pat_5	enc_39	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	4	{score}	numeric	Vital signs
+obs_221	04/12/2014 12:38:29 AM	pat_5	enc_39	29463-7	Body Weight	14	kg	numeric	Vital signs
+obs_222	04/12/2014 12:38:29 AM	pat_5	enc_39	77606-2	Weight-for-length Per age and sex	55.206	%	numeric	Vital signs
+obs_223	04/12/2014 12:38:29 AM	pat_5	enc_39	8289-1	Head Occipital-frontal circumference Percentile	31.99	%	numeric	Vital signs
+obs_224	04/12/2014 12:38:29 AM	pat_5	enc_39	9843-4	Head Occipital-frontal circumference	48.89	cm	numeric	Vital signs
+obs_225	04/12/2014 12:38:29 AM	pat_5	enc_39	39156-5	Body mass index (BMI) [Ratio]	16.39	kg/m2	numeric	Vital signs
+obs_226	04/12/2014 12:38:29 AM	pat_5	enc_39	59576-9	Body mass index (BMI) [Percentile] Per age and sex	61.352	%	numeric	Vital signs
+obs_227	04/12/2014 12:38:29 AM	pat_5	enc_39	85354-9	Blood pressure panel with all children optional	80	mm[Hg]	numeric	Vital signs
+obs_228	04/12/2014 12:38:29 AM	pat_5	enc_39	8867-4	Heart rate	92	/min	numeric	Vital signs
+obs_229	10/25/2019 12:28:02 PM	pat_6	enc_53	8302-2	Body Height	160.6	cm	numeric	Vital signs
+obs_230	10/25/2019 12:28:02 PM	pat_6	enc_53	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_231	10/25/2019 12:28:02 PM	pat_6	enc_53	29463-7	Body Weight	48.1	kg	numeric	Vital signs
+obs_232	10/25/2019 12:28:02 PM	pat_6	enc_53	39156-5	Body mass index (BMI) [Ratio]	18.66	kg/m2	numeric	Vital signs
+obs_233	10/25/2019 12:28:02 PM	pat_6	enc_53	59576-9	Body mass index (BMI) [Percentile] Per age and sex	71.932	%	numeric	Vital signs
+obs_234	10/25/2019 12:28:02 PM	pat_6	enc_53	85354-9	Blood pressure panel with all children optional	80	mm[Hg]	numeric	Vital signs
+obs_235	10/25/2019 12:28:02 PM	pat_6	enc_53	8867-4	Heart rate	70	/min	numeric	Vital signs
+obs_236	10/25/2019 12:28:02 PM	pat_6	enc_53	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_237	10/25/2019 12:28:02 PM	pat_6	enc_53	6690-2	Leukocytes [#/volume] in Blood by Automated count	3.5692	10*3/uL	numeric	Laboratory
+obs_238	10/25/2019 12:28:02 PM	pat_6	enc_53	789-8	Erythrocytes [#/volume] in Blood by Automated count	5.0186	10*6/uL	numeric	Laboratory
+obs_239	10/09/2016 07:58:48 AM	pat_10	enc_92	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	6.21	%	numeric	Laboratory
+obs_240	10/09/2016 07:58:48 AM	pat_10	enc_92	8302-2	Body Height	152.6	cm	numeric	Vital signs
+obs_241	10/09/2016 07:58:48 AM	pat_10	enc_92	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	3	{score}	numeric	Vital signs
+obs_242	10/09/2016 07:58:48 AM	pat_10	enc_92	29463-7	Body Weight	65.2	kg	numeric	Vital signs
+obs_243	10/09/2016 07:58:48 AM	pat_10	enc_92	39156-5	Body mass index (BMI) [Ratio]	28	kg/m2	numeric	Vital signs
+obs_244	10/09/2016 07:58:48 AM	pat_10	enc_92	85354-9	Blood pressure panel with all children optional	73	mm[Hg]	numeric	Vital signs
+obs_245	10/09/2016 07:58:48 AM	pat_10	enc_92	8867-4	Heart rate	80	/min	numeric	Vital signs
+obs_246	10/09/2016 07:58:48 AM	pat_10	enc_92	9279-1	Respiratory rate	12	/min	numeric	Vital signs
+obs_247	10/09/2016 07:58:48 AM	pat_10	enc_92	2339-0	Glucose [Mass/volume] in Blood	81.67	mg/dL	numeric	Laboratory
+obs_248	10/09/2016 07:58:48 AM	pat_10	enc_92	6299-2	Urea nitrogen [Mass/volume] in Blood	14.87	mg/dL	numeric	Laboratory
+obs_249	10/27/2019 07:58:48 AM	pat_10	enc_95	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	5.85	%	numeric	Laboratory
+obs_250	10/27/2019 07:58:48 AM	pat_10	enc_95	8302-2	Body Height	152.6	cm	numeric	Vital signs
+obs_251	10/27/2019 07:58:48 AM	pat_10	enc_95	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_252	10/27/2019 07:58:48 AM	pat_10	enc_95	29463-7	Body Weight	65.2	kg	numeric	Vital signs
+obs_253	10/27/2019 07:58:48 AM	pat_10	enc_95	39156-5	Body mass index (BMI) [Ratio]	28	kg/m2	numeric	Vital signs
+obs_254	10/27/2019 07:58:48 AM	pat_10	enc_95	85354-9	Blood pressure panel with all children optional	76	mm[Hg]	numeric	Vital signs
+obs_255	10/27/2019 07:58:48 AM	pat_10	enc_95	8867-4	Heart rate	69	/min	numeric	Vital signs
+obs_256	10/27/2019 07:58:48 AM	pat_10	enc_95	9279-1	Respiratory rate	16	/min	numeric	Vital signs
+obs_257	10/27/2019 07:58:48 AM	pat_10	enc_95	2339-0	Glucose [Mass/volume] in Blood	97.64	mg/dL	numeric	Laboratory
+obs_258	10/27/2019 07:58:48 AM	pat_10	enc_95	6299-2	Urea nitrogen [Mass/volume] in Blood	16.35	mg/dL	numeric	Laboratory
+obs_259	04/13/2014 10:39:24 PM	pat_8	enc_70	8302-2	Body Height	166.4	cm	numeric	Vital signs
+obs_260	04/13/2014 10:39:24 PM	pat_8	enc_70	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_261	04/13/2014 10:39:24 PM	pat_8	enc_70	29463-7	Body Weight	76.1	kg	numeric	Vital signs
+obs_262	04/13/2014 10:39:24 PM	pat_8	enc_70	39156-5	Body mass index (BMI) [Ratio]	27.49	kg/m2	numeric	Vital signs
+obs_263	04/13/2014 10:39:24 PM	pat_8	enc_70	85354-9	Blood pressure panel with all children optional	95	mm[Hg]	numeric	Vital signs
+obs_264	04/13/2014 10:39:24 PM	pat_8	enc_70	8867-4	Heart rate	66	/min	numeric	Vital signs
+obs_265	04/13/2014 10:39:24 PM	pat_8	enc_70	9279-1	Respiratory rate	13	/min	numeric	Vital signs
+obs_266	04/13/2014 10:39:24 PM	pat_8	enc_70	2093-3	Cholesterol [Mass/volume] in Serum or Plasma	127.46	mg/dL	numeric	Laboratory
+obs_267	04/13/2014 10:39:24 PM	pat_8	enc_70	2571-8	Triglycerides	132.96	mg/dL	numeric	Laboratory
+obs_268	04/13/2014 10:39:24 PM	pat_8	enc_70	18262-6	Low Density Lipoprotein Cholesterol	40.57	mg/dL	numeric	Laboratory
+obs_269	01/13/2021 01:48:13 PM	pat_9	enc_85	8310-5	Body temperature	40.549	Cel	numeric	Vital signs
+obs_270	01/13/2021 01:48:13 PM	pat_9	enc_85	9279-1	Respiratory rate	35.088	/min	numeric	Vital signs
+obs_271	01/13/2021 01:48:13 PM	pat_9	enc_85	8867-4	Heart rate	59.457	/min	numeric	Vital signs
+obs_272	01/13/2021 01:48:13 PM	pat_9	enc_85	2708-6	Oxygen saturation in Arterial blood	84.87	%	numeric	Vital signs
+obs_273	01/13/2021 01:48:13 PM	pat_9	enc_85	85354-9	Blood pressure panel with all children optional	67	mm[Hg]	numeric	Vital signs
+obs_274	01/13/2021 01:48:13 PM	pat_9	enc_85	29463-7	Body Weight	53.1	kg	numeric	Vital signs
+obs_275	01/13/2021 01:59:31 PM	pat_9	enc_85	80382-5	Influenza virus A Ag [Presence] in Upper respiratory specimen by Rapid immunoassay				Laboratory
+obs_276	01/13/2021 01:59:31 PM	pat_9	enc_85	80383-3	Influenza virus B Ag [Presence] in Upper respiratory specimen by Rapid immunoassay				Laboratory
+obs_277	01/13/2021 02:56:21 PM	pat_9	enc_85	94531-1	SARS-CoV-2 RNA Pnl Resp NAA+probe				Laboratory
+obs_278	04/22/2017 12:38:29 AM	pat_5	enc_43	8302-2	Body Height	112.3	cm	numeric	Vital signs
+obs_279	04/22/2017 12:38:29 AM	pat_5	enc_43	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	2	{score}	numeric	Vital signs
+obs_280	04/22/2017 12:38:29 AM	pat_5	enc_43	29463-7	Body Weight	18.6	kg	numeric	Vital signs
+obs_281	04/22/2017 12:38:29 AM	pat_5	enc_43	39156-5	Body mass index (BMI) [Ratio]	14.7	kg/m2	numeric	Vital signs
+obs_282	04/22/2017 12:38:29 AM	pat_5	enc_43	59576-9	Body mass index (BMI) [Percentile] Per age and sex	27.748	%	numeric	Vital signs
+obs_283	04/22/2017 12:38:29 AM	pat_5	enc_43	85354-9	Blood pressure panel with all children optional	88	mm[Hg]	numeric	Vital signs
+obs_284	04/22/2017 12:38:29 AM	pat_5	enc_43	8867-4	Heart rate	97	/min	numeric	Vital signs
+obs_285	04/22/2017 12:38:29 AM	pat_5	enc_43	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_286	04/22/2017 12:38:29 AM	pat_5	enc_43	6690-2	Leukocytes [#/volume] in Blood by Automated count	9.83	10*3/uL	numeric	Laboratory
+obs_287	04/22/2017 12:38:29 AM	pat_5	enc_43	789-8	Erythrocytes [#/volume] in Blood by Automated count	5.1954	10*6/uL	numeric	Laboratory
+obs_288	05/06/2018 10:39:24 PM	pat_8	enc_74	8302-2	Body Height	166.4	cm	numeric	Vital signs
+obs_289	05/06/2018 10:39:24 PM	pat_8	enc_74	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	2	{score}	numeric	Vital signs
+obs_290	05/06/2018 10:39:24 PM	pat_8	enc_74	29463-7	Body Weight	82.2	kg	numeric	Vital signs
+obs_291	05/06/2018 10:39:24 PM	pat_8	enc_74	39156-5	Body mass index (BMI) [Ratio]	29.67	kg/m2	numeric	Vital signs
+obs_292	05/06/2018 10:39:24 PM	pat_8	enc_74	85354-9	Blood pressure panel with all children optional	98	mm[Hg]	numeric	Vital signs
+obs_293	05/06/2018 10:39:24 PM	pat_8	enc_74	8867-4	Heart rate	73	/min	numeric	Vital signs
+obs_294	05/06/2018 10:39:24 PM	pat_8	enc_74	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_295	05/06/2018 10:39:24 PM	pat_8	enc_74	72166-2	Tobacco smoking status				Social history
+obs_296	05/06/2018 11:26:09 PM	pat_8	enc_74	93025-5	Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences [PRAPARE]				Survey
+obs_297	05/06/2018 11:59:00 PM	pat_8	enc_74	55758-7	Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]	2	{score}	numeric	Survey
+obs_298	11/17/2017 01:48:13 PM	pat_9	enc_82	8302-2	Body Height	159.4	cm	numeric	Vital signs
+obs_299	11/17/2017 01:48:13 PM	pat_9	enc_82	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	0	{score}	numeric	Vital signs
+obs_300	11/17/2017 01:48:13 PM	pat_9	enc_82	29463-7	Body Weight	48.7	kg	numeric	Vital signs
+obs_301	11/17/2017 01:48:13 PM	pat_9	enc_82	39156-5	Body mass index (BMI) [Ratio]	19.17	kg/m2	numeric	Vital signs
+obs_302	11/17/2017 01:48:13 PM	pat_9	enc_82	85354-9	Blood pressure panel with all children optional	68	mm[Hg]	numeric	Vital signs
+obs_303	11/17/2017 01:48:13 PM	pat_9	enc_82	8867-4	Heart rate	92	/min	numeric	Vital signs
+obs_304	11/17/2017 01:48:13 PM	pat_9	enc_82	9279-1	Respiratory rate	13	/min	numeric	Vital signs
+obs_305	11/17/2017 01:48:13 PM	pat_9	enc_82	72166-2	Tobacco smoking status				Social history
+obs_306	11/17/2017 02:43:22 PM	pat_9	enc_82	93025-5	Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences [PRAPARE]				Survey
+obs_307	11/17/2017 03:04:31 PM	pat_9	enc_82	70274-6	Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]	9	{score}	numeric	Survey
+obs_308	11/11/2022 11:28:02 AM	pat_6	enc_56	8302-2	Body Height	182.7	cm	numeric	Vital signs
+obs_309	11/11/2022 11:28:02 AM	pat_6	enc_56	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	4	{score}	numeric	Vital signs
+obs_310	11/11/2022 11:28:02 AM	pat_6	enc_56	29463-7	Body Weight	65.5	kg	numeric	Vital signs
+obs_311	11/11/2022 11:28:02 AM	pat_6	enc_56	39156-5	Body mass index (BMI) [Ratio]	19.62	kg/m2	numeric	Vital signs
+obs_312	11/11/2022 11:28:02 AM	pat_6	enc_56	59576-9	Body mass index (BMI) [Percentile] Per age and sex	55.945	%	numeric	Vital signs
+obs_313	11/11/2022 11:28:02 AM	pat_6	enc_56	85354-9	Blood pressure panel with all children optional	76	mm[Hg]	numeric	Vital signs
+obs_314	11/11/2022 11:28:02 AM	pat_6	enc_56	8867-4	Heart rate	95	/min	numeric	Vital signs
+obs_315	11/11/2022 11:28:02 AM	pat_6	enc_56	9279-1	Respiratory rate	13	/min	numeric	Vital signs
+obs_316	11/11/2022 11:28:02 AM	pat_6	enc_56	72166-2	Tobacco smoking status				Social history
+obs_317	10/02/2015 12:28:02 PM	pat_6	enc_49	8302-2	Body Height	134.2	cm	numeric	Vital signs
+obs_318	10/02/2015 12:28:02 PM	pat_6	enc_49	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_319	10/02/2015 12:28:02 PM	pat_6	enc_49	29463-7	Body Weight	32.3	kg	numeric	Vital signs
+obs_320	10/02/2015 12:28:02 PM	pat_6	enc_49	39156-5	Body mass index (BMI) [Ratio]	17.93	kg/m2	numeric	Vital signs
+obs_321	10/02/2015 12:28:02 PM	pat_6	enc_49	59576-9	Body mass index (BMI) [Percentile] Per age and sex	89.718	%	numeric	Vital signs
+obs_322	10/02/2015 12:28:02 PM	pat_6	enc_49	85354-9	Blood pressure panel with all children optional	74	mm[Hg]	numeric	Vital signs
+obs_323	10/02/2015 12:28:02 PM	pat_6	enc_49	8867-4	Heart rate	79	/min	numeric	Vital signs
+obs_324	10/02/2015 12:28:02 PM	pat_6	enc_49	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_325	10/02/2015 12:28:02 PM	pat_6	enc_49	72166-2	Tobacco smoking status				Social history
+obs_326	04/30/2017 10:39:24 PM	pat_8	enc_73	8302-2	Body Height	166.4	cm	numeric	Vital signs
+obs_327	04/30/2017 10:39:24 PM	pat_8	enc_73	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_328	04/30/2017 10:39:24 PM	pat_8	enc_73	29463-7	Body Weight	81.6	kg	numeric	Vital signs
+obs_329	04/30/2017 10:39:24 PM	pat_8	enc_73	39156-5	Body mass index (BMI) [Ratio]	29.48	kg/m2	numeric	Vital signs
+obs_330	04/30/2017 10:39:24 PM	pat_8	enc_73	85354-9	Blood pressure panel with all children optional	95	mm[Hg]	numeric	Vital signs
+obs_331	04/30/2017 10:39:24 PM	pat_8	enc_73	8867-4	Heart rate	66	/min	numeric	Vital signs
+obs_332	04/30/2017 10:39:24 PM	pat_8	enc_73	9279-1	Respiratory rate	16	/min	numeric	Vital signs
+obs_333	04/30/2017 10:39:24 PM	pat_8	enc_73	2093-3	Cholesterol [Mass/volume] in Serum or Plasma	180.91	mg/dL	numeric	Laboratory
+obs_334	04/30/2017 10:39:24 PM	pat_8	enc_73	2571-8	Triglycerides	136.15	mg/dL	numeric	Laboratory
+obs_335	04/30/2017 10:39:24 PM	pat_8	enc_73	18262-6	Low Density Lipoprotein Cholesterol	100.45	mg/dL	numeric	Laboratory
+obs_336	01/08/2014 11:13:09 AM	pat_1	enc_3	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	5.9	%	numeric	Laboratory
+obs_337	10/06/2015 09:35:07 PM	pat_2	enc_13	8302-2	Body Height	156.9	cm	numeric	Vital signs
+obs_338	10/06/2015 09:35:07 PM	pat_2	enc_13	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_339	10/06/2015 09:35:07 PM	pat_2	enc_13	29463-7	Body Weight	77.8	kg	numeric	Vital signs
+obs_340	10/06/2015 09:35:07 PM	pat_2	enc_13	39156-5	Body mass index (BMI) [Ratio]	31.6	kg/m2	numeric	Vital signs
+obs_341	10/06/2015 09:35:07 PM	pat_2	enc_13	85354-9	Blood pressure panel with all children optional	92	mm[Hg]	numeric	Vital signs
+obs_342	10/06/2015 09:35:07 PM	pat_2	enc_13	8867-4	Heart rate	68	/min	numeric	Vital signs
+obs_343	10/06/2015 09:35:07 PM	pat_2	enc_13	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_344	10/06/2015 09:35:07 PM	pat_2	enc_13	6690-2	Leukocytes [#/volume] in Blood by Automated count	8.4251	10*3/uL	numeric	Laboratory
+obs_345	10/06/2015 09:35:07 PM	pat_2	enc_13	789-8	Erythrocytes [#/volume] in Blood by Automated count	4.7848	10*6/uL	numeric	Laboratory
+obs_346	10/06/2015 09:35:07 PM	pat_2	enc_13	718-7	Hemoglobin [Mass/volume] in Blood	13.894	g/dL	numeric	Laboratory
+obs_347	12/23/2013 12:13:09 PM	pat_1	enc_1	8310-5	Body temperature	37.324	Cel	numeric	Vital signs
+obs_348	04/28/2018 12:38:29 AM	pat_5	enc_44	8302-2	Body Height	118.5	cm	numeric	Vital signs
+obs_349	04/28/2018 12:38:29 AM	pat_5	enc_44	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	3	{score}	numeric	Vital signs
+obs_350	04/28/2018 12:38:29 AM	pat_5	enc_44	29463-7	Body Weight	20.4	kg	numeric	Vital signs
+obs_351	04/28/2018 12:38:29 AM	pat_5	enc_44	39156-5	Body mass index (BMI) [Ratio]	14.5	kg/m2	numeric	Vital signs
+obs_352	04/28/2018 12:38:29 AM	pat_5	enc_44	59576-9	Body mass index (BMI) [Percentile] Per age and sex	20.852	%	numeric	Vital signs
+obs_353	04/28/2018 12:38:29 AM	pat_5	enc_44	85354-9	Blood pressure panel with all children optional	82	mm[Hg]	numeric	Vital signs
+obs_354	04/28/2018 12:38:29 AM	pat_5	enc_44	8867-4	Heart rate	65	/min	numeric	Vital signs
+obs_355	04/28/2018 12:38:29 AM	pat_5	enc_44	9279-1	Respiratory rate	12	/min	numeric	Vital signs
+obs_356	04/28/2018 12:38:29 AM	pat_5	enc_44	72166-2	Tobacco smoking status				Social history
+obs_357	04/11/2015 12:38:29 AM	pat_5	enc_41	8302-2	Body Height	99.6	cm	numeric	Vital signs
+obs_358	04/11/2015 12:38:29 AM	pat_5	enc_41	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	3	{score}	numeric	Vital signs
+obs_359	04/11/2015 12:38:29 AM	pat_5	enc_41	29463-7	Body Weight	15.9	kg	numeric	Vital signs
+obs_360	04/11/2015 12:38:29 AM	pat_5	enc_41	77606-2	Weight-for-length Per age and sex	62.315	%	numeric	Vital signs
+obs_361	04/11/2015 12:38:29 AM	pat_5	enc_41	8289-1	Head Occipital-frontal circumference Percentile	31.99	%	numeric	Vital signs
+obs_362	04/11/2015 12:38:29 AM	pat_5	enc_41	9843-4	Head Occipital-frontal circumference	48.91	cm	numeric	Vital signs
+obs_363	04/11/2015 12:38:29 AM	pat_5	enc_41	39156-5	Body mass index (BMI) [Ratio]	16.02	kg/m2	numeric	Vital signs
+obs_364	04/11/2015 12:38:29 AM	pat_5	enc_41	59576-9	Body mass index (BMI) [Percentile] Per age and sex	62.399	%	numeric	Vital signs
+obs_365	04/11/2015 12:38:29 AM	pat_5	enc_41	85354-9	Blood pressure panel with all children optional	87	mm[Hg]	numeric	Vital signs
+obs_366	04/11/2015 12:38:29 AM	pat_5	enc_41	8867-4	Heart rate	63	/min	numeric	Vital signs
+obs_367	02/26/2023 10:23:34 AM	pat_4	enc_34	8302-2	Body Height	68.3	cm	numeric	Vital signs
+obs_368	02/26/2023 10:23:34 AM	pat_4	enc_34	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	2	{score}	numeric	Vital signs
+obs_369	02/26/2023 10:23:34 AM	pat_4	enc_34	29463-7	Body Weight	7.2	kg	numeric	Vital signs
+obs_370	02/26/2023 10:23:34 AM	pat_4	enc_34	77606-2	Weight-for-length Per age and sex	6.436	%	numeric	Vital signs
+obs_371	02/26/2023 10:23:34 AM	pat_4	enc_34	8289-1	Head Occipital-frontal circumference Percentile	81.89	%	numeric	Vital signs
+obs_372	02/26/2023 10:23:34 AM	pat_4	enc_34	9843-4	Head Occipital-frontal circumference	44.62	cm	numeric	Vital signs
+obs_373	02/26/2023 10:23:34 AM	pat_4	enc_34	85354-9	Blood pressure panel with all children optional	78	mm[Hg]	numeric	Vital signs
+obs_374	02/26/2023 10:23:34 AM	pat_4	enc_34	8867-4	Heart rate	91	/min	numeric	Vital signs
+obs_375	02/26/2023 10:23:34 AM	pat_4	enc_34	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_376	02/26/2023 10:23:34 AM	pat_4	enc_34	72166-2	Tobacco smoking status				Social history
+obs_377	04/20/2014 07:58:48 AM	pat_10	enc_88	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	5.95	%	numeric	Laboratory
+obs_378	04/20/2014 07:58:48 AM	pat_10	enc_88	8302-2	Body Height	152.6	cm	numeric	Vital signs
+obs_379	04/20/2014 07:58:48 AM	pat_10	enc_88	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	2	{score}	numeric	Vital signs
+obs_380	04/20/2014 07:58:48 AM	pat_10	enc_88	29463-7	Body Weight	65.2	kg	numeric	Vital signs
+obs_381	04/20/2014 07:58:48 AM	pat_10	enc_88	39156-5	Body mass index (BMI) [Ratio]	28	kg/m2	numeric	Vital signs
+obs_382	04/20/2014 07:58:48 AM	pat_10	enc_88	85354-9	Blood pressure panel with all children optional	77	mm[Hg]	numeric	Vital signs
+obs_383	04/20/2014 07:58:48 AM	pat_10	enc_88	8867-4	Heart rate	99	/min	numeric	Vital signs
+obs_384	04/20/2014 07:58:48 AM	pat_10	enc_88	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_385	04/20/2014 07:58:48 AM	pat_10	enc_88	2339-0	Glucose [Mass/volume] in Blood	74.2	mg/dL	numeric	Laboratory
+obs_386	04/20/2014 07:58:48 AM	pat_10	enc_88	6299-2	Urea nitrogen [Mass/volume] in Blood	10.84	mg/dL	numeric	Laboratory
+obs_387	10/07/2016 12:28:02 PM	pat_6	enc_50	8302-2	Body Height	141.4	cm	numeric	Vital signs
+obs_388	10/07/2016 12:28:02 PM	pat_6	enc_50	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	2	{score}	numeric	Vital signs
+obs_389	10/07/2016 12:28:02 PM	pat_6	enc_50	29463-7	Body Weight	35	kg	numeric	Vital signs
+obs_390	10/07/2016 12:28:02 PM	pat_6	enc_50	39156-5	Body mass index (BMI) [Ratio]	17.53	kg/m2	numeric	Vital signs
+obs_391	10/07/2016 12:28:02 PM	pat_6	enc_50	59576-9	Body mass index (BMI) [Percentile] Per age and sex	81.422	%	numeric	Vital signs
+obs_392	10/07/2016 12:28:02 PM	pat_6	enc_50	85354-9	Blood pressure panel with all children optional	80	mm[Hg]	numeric	Vital signs
+obs_393	10/07/2016 12:28:02 PM	pat_6	enc_50	8867-4	Heart rate	82	/min	numeric	Vital signs
+obs_394	10/07/2016 12:28:02 PM	pat_6	enc_50	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_395	10/07/2016 12:28:02 PM	pat_6	enc_50	72166-2	Tobacco smoking status				Social history
+obs_396	01/01/2014 11:13:09 AM	pat_1	enc_2	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	6.04	%	numeric	Laboratory
+obs_397	01/01/2014 11:13:09 AM	pat_1	enc_2	8302-2	Body Height	174.7	cm	numeric	Vital signs
+obs_398	01/01/2014 11:13:09 AM	pat_1	enc_2	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	4	{score}	numeric	Vital signs
+obs_399	01/01/2014 11:13:09 AM	pat_1	enc_2	29463-7	Body Weight	92.2	kg	numeric	Vital signs
+obs_400	01/01/2014 11:13:09 AM	pat_1	enc_2	39156-5	Body mass index (BMI) [Ratio]	30.21	kg/m2	numeric	Vital signs
+obs_401	01/01/2014 11:13:09 AM	pat_1	enc_2	85354-9	Blood pressure panel with all children optional	55	mm[Hg]	numeric	Vital signs
+obs_402	01/01/2014 11:13:09 AM	pat_1	enc_2	8867-4	Heart rate	92	/min	numeric	Vital signs
+obs_403	01/01/2014 11:13:09 AM	pat_1	enc_2	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_404	01/01/2014 11:13:09 AM	pat_1	enc_2	2339-0	Glucose [Mass/volume] in Blood	82.99	mg/dL	numeric	Laboratory
+obs_405	01/01/2014 11:13:09 AM	pat_1	enc_2	6299-2	Urea nitrogen [Mass/volume] in Blood	9.26	mg/dL	numeric	Laboratory
+obs_406	10/21/2018 07:58:48 AM	pat_10	enc_94	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	5.92	%	numeric	Laboratory
+obs_407	10/21/2018 07:58:48 AM	pat_10	enc_94	8302-2	Body Height	152.6	cm	numeric	Vital signs
+obs_408	10/21/2018 07:58:48 AM	pat_10	enc_94	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	2	{score}	numeric	Vital signs
+obs_409	10/21/2018 07:58:48 AM	pat_10	enc_94	29463-7	Body Weight	65.2	kg	numeric	Vital signs
+obs_410	10/21/2018 07:58:48 AM	pat_10	enc_94	39156-5	Body mass index (BMI) [Ratio]	28	kg/m2	numeric	Vital signs
+obs_411	10/21/2018 07:58:48 AM	pat_10	enc_94	85354-9	Blood pressure panel with all children optional	73	mm[Hg]	numeric	Vital signs
+obs_412	10/21/2018 07:58:48 AM	pat_10	enc_94	8867-4	Heart rate	67	/min	numeric	Vital signs
+obs_413	10/21/2018 07:58:48 AM	pat_10	enc_94	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_414	10/21/2018 07:58:48 AM	pat_10	enc_94	2339-0	Glucose [Mass/volume] in Blood	74.5	mg/dL	numeric	Laboratory
+obs_415	10/21/2018 07:58:48 AM	pat_10	enc_94	6299-2	Urea nitrogen [Mass/volume] in Blood	14.76	mg/dL	numeric	Laboratory
+obs_416	11/07/2021 06:58:48 AM	pat_10	enc_97	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	5.82	%	numeric	Laboratory
+obs_417	11/07/2021 06:58:48 AM	pat_10	enc_97	8302-2	Body Height	152.6	cm	numeric	Vital signs
+obs_418	11/07/2021 06:58:48 AM	pat_10	enc_97	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	3	{score}	numeric	Vital signs
+obs_419	11/07/2021 06:58:48 AM	pat_10	enc_97	29463-7	Body Weight	65.2	kg	numeric	Vital signs
+obs_420	11/07/2021 06:58:48 AM	pat_10	enc_97	39156-5	Body mass index (BMI) [Ratio]	28	kg/m2	numeric	Vital signs
+obs_421	11/07/2021 06:58:48 AM	pat_10	enc_97	85354-9	Blood pressure panel with all children optional	74	mm[Hg]	numeric	Vital signs
+obs_422	11/07/2021 06:58:48 AM	pat_10	enc_97	8867-4	Heart rate	62	/min	numeric	Vital signs
+obs_423	11/07/2021 06:58:48 AM	pat_10	enc_97	9279-1	Respiratory rate	13	/min	numeric	Vital signs
+obs_424	11/07/2021 06:58:48 AM	pat_10	enc_97	2339-0	Glucose [Mass/volume] in Blood	71.6	mg/dL	numeric	Laboratory
+obs_425	11/07/2021 06:58:48 AM	pat_10	enc_97	6299-2	Urea nitrogen [Mass/volume] in Blood	18.5	mg/dL	numeric	Laboratory
+obs_426	07/11/2023 02:50:16 AM	pat_3	enc_24	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	6.33	%	numeric	Laboratory
+obs_427	07/11/2023 02:50:16 AM	pat_3	enc_24	8302-2	Body Height	170.6	cm	numeric	Vital signs
+obs_428	07/11/2023 02:50:16 AM	pat_3	enc_24	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_429	07/11/2023 02:50:16 AM	pat_3	enc_24	29463-7	Body Weight	87.8	kg	numeric	Vital signs
+obs_430	07/11/2023 02:50:16 AM	pat_3	enc_24	39156-5	Body mass index (BMI) [Ratio]	30.17	kg/m2	numeric	Vital signs
+obs_431	07/11/2023 02:50:16 AM	pat_3	enc_24	85354-9	Blood pressure panel with all children optional	85	mm[Hg]	numeric	Vital signs
+obs_432	07/11/2023 02:50:16 AM	pat_3	enc_24	8867-4	Heart rate	66	/min	numeric	Vital signs
+obs_433	07/11/2023 02:50:16 AM	pat_3	enc_24	9279-1	Respiratory rate	13	/min	numeric	Vital signs
+obs_434	07/11/2023 02:50:16 AM	pat_3	enc_24	2339-0	Glucose [Mass/volume] in Blood	93	mg/dL	numeric	Laboratory
+obs_435	07/11/2023 02:50:16 AM	pat_3	enc_24	6299-2	Urea nitrogen [Mass/volume] in Blood	10.95	mg/dL	numeric	Laboratory
+obs_436	10/09/2018 09:35:07 PM	pat_2	enc_14	8302-2	Body Height	156.9	cm	numeric	Vital signs
+obs_437	10/09/2018 09:35:07 PM	pat_2	enc_14	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_438	10/09/2018 09:35:07 PM	pat_2	enc_14	29463-7	Body Weight	70.7	kg	numeric	Vital signs
+obs_439	10/09/2018 09:35:07 PM	pat_2	enc_14	39156-5	Body mass index (BMI) [Ratio]	28.73	kg/m2	numeric	Vital signs
+obs_440	10/09/2018 09:35:07 PM	pat_2	enc_14	85354-9	Blood pressure panel with all children optional	88	mm[Hg]	numeric	Vital signs
+obs_441	10/09/2018 09:35:07 PM	pat_2	enc_14	8867-4	Heart rate	69	/min	numeric	Vital signs
+obs_442	10/09/2018 09:35:07 PM	pat_2	enc_14	9279-1	Respiratory rate	13	/min	numeric	Vital signs
+obs_443	10/09/2018 09:35:07 PM	pat_2	enc_14	2093-3	Cholesterol [Mass/volume] in Serum or Plasma	192.84	mg/dL	numeric	Laboratory
+obs_444	10/09/2018 09:35:07 PM	pat_2	enc_14	2571-8	Triglycerides	142.33	mg/dL	numeric	Laboratory
+obs_445	10/09/2018 09:35:07 PM	pat_2	enc_14	18262-6	Low Density Lipoprotein Cholesterol	101.66	mg/dL	numeric	Laboratory
+obs_446	03/04/2019 06:39:01 PM	pat_7	enc_64	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	5.81	%	numeric	Laboratory
+obs_447	03/04/2019 06:39:01 PM	pat_7	enc_64	8302-2	Body Height	171.3	cm	numeric	Vital signs
+obs_448	03/04/2019 06:39:01 PM	pat_7	enc_64	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	3	{score}	numeric	Vital signs
+obs_449	03/04/2019 06:39:01 PM	pat_7	enc_64	29463-7	Body Weight	85.4	kg	numeric	Vital signs
+obs_450	03/04/2019 06:39:01 PM	pat_7	enc_64	39156-5	Body mass index (BMI) [Ratio]	29.11	kg/m2	numeric	Vital signs
+obs_451	03/04/2019 06:39:01 PM	pat_7	enc_64	85354-9	Blood pressure panel with all children optional	82	mm[Hg]	numeric	Vital signs
+obs_452	03/04/2019 06:39:01 PM	pat_7	enc_64	8867-4	Heart rate	86	/min	numeric	Vital signs
+obs_453	03/04/2019 06:39:01 PM	pat_7	enc_64	9279-1	Respiratory rate	16	/min	numeric	Vital signs
+obs_454	03/04/2019 06:39:01 PM	pat_7	enc_64	2339-0	Glucose [Mass/volume] in Blood	72.7	mg/dL	numeric	Laboratory
+obs_455	03/04/2019 06:39:01 PM	pat_7	enc_64	6299-2	Urea nitrogen [Mass/volume] in Blood	14.22	mg/dL	numeric	Laboratory
+obs_456	10/30/2020 12:28:02 PM	pat_6	enc_54	8302-2	Body Height	167.2	cm	numeric	Vital signs
+obs_457	10/30/2020 12:28:02 PM	pat_6	enc_54	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	4	{score}	numeric	Vital signs
+obs_458	10/30/2020 12:28:02 PM	pat_6	enc_54	29463-7	Body Weight	50.7	kg	numeric	Vital signs
+obs_459	10/30/2020 12:28:02 PM	pat_6	enc_54	39156-5	Body mass index (BMI) [Ratio]	18.12	kg/m2	numeric	Vital signs
+obs_460	10/30/2020 12:28:02 PM	pat_6	enc_54	59576-9	Body mass index (BMI) [Percentile] Per age and sex	55.088	%	numeric	Vital signs
+obs_461	10/30/2020 12:28:02 PM	pat_6	enc_54	85354-9	Blood pressure panel with all children optional	80	mm[Hg]	numeric	Vital signs
+obs_462	10/30/2020 12:28:02 PM	pat_6	enc_54	8867-4	Heart rate	72	/min	numeric	Vital signs
+obs_463	10/30/2020 12:28:02 PM	pat_6	enc_54	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_464	10/30/2020 12:28:02 PM	pat_6	enc_54	72166-2	Tobacco smoking status				Social history
+obs_465	10/30/2020 12:59:44 PM	pat_6	enc_54	89204-2	Patient Health Questionnaire-9: Modified for Teens total score [Reported.PHQ.Teen]	3	{score}	numeric	Survey
+obs_466	10/12/2021 09:35:07 PM	pat_2	enc_17	8302-2	Body Height	156.9	cm	numeric	Vital signs
+obs_467	10/12/2021 09:35:07 PM	pat_2	enc_17	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	2	{score}	numeric	Vital signs
+obs_468	10/12/2021 09:35:07 PM	pat_2	enc_17	29463-7	Body Weight	76.2	kg	numeric	Vital signs
+obs_469	10/12/2021 09:35:07 PM	pat_2	enc_17	39156-5	Body mass index (BMI) [Ratio]	30.96	kg/m2	numeric	Vital signs
+obs_470	10/12/2021 09:35:07 PM	pat_2	enc_17	85354-9	Blood pressure panel with all children optional	86	mm[Hg]	numeric	Vital signs
+obs_471	10/12/2021 09:35:07 PM	pat_2	enc_17	8867-4	Heart rate	76	/min	numeric	Vital signs
+obs_472	10/12/2021 09:35:07 PM	pat_2	enc_17	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_473	10/12/2021 09:35:07 PM	pat_2	enc_17	2093-3	Cholesterol [Mass/volume] in Serum or Plasma	214.78	mg/dL	numeric	Laboratory
+obs_474	10/12/2021 09:35:07 PM	pat_2	enc_17	2571-8	Triglycerides	137.8	mg/dL	numeric	Laboratory
+obs_475	10/12/2021 09:35:07 PM	pat_2	enc_17	18262-6	Low Density Lipoprotein Cholesterol	134.43	mg/dL	numeric	Laboratory
+obs_476	02/26/2018 06:39:01 PM	pat_7	enc_62	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	6.34	%	numeric	Laboratory
+obs_477	02/26/2018 06:39:01 PM	pat_7	enc_62	8302-2	Body Height	171.3	cm	numeric	Vital signs
+obs_478	02/26/2018 06:39:01 PM	pat_7	enc_62	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	4	{score}	numeric	Vital signs
+obs_479	02/26/2018 06:39:01 PM	pat_7	enc_62	29463-7	Body Weight	87.5	kg	numeric	Vital signs
+obs_480	02/26/2018 06:39:01 PM	pat_7	enc_62	39156-5	Body mass index (BMI) [Ratio]	29.82	kg/m2	numeric	Vital signs
+obs_481	02/26/2018 06:39:01 PM	pat_7	enc_62	85354-9	Blood pressure panel with all children optional	84	mm[Hg]	numeric	Vital signs
+obs_482	02/26/2018 06:39:01 PM	pat_7	enc_62	8867-4	Heart rate	71	/min	numeric	Vital signs
+obs_483	02/26/2018 06:39:01 PM	pat_7	enc_62	9279-1	Respiratory rate	13	/min	numeric	Vital signs
+obs_484	02/26/2018 06:39:01 PM	pat_7	enc_62	2339-0	Glucose [Mass/volume] in Blood	77.97	mg/dL	numeric	Laboratory
+obs_485	02/26/2018 06:39:01 PM	pat_7	enc_62	6299-2	Urea nitrogen [Mass/volume] in Blood	19.24	mg/dL	numeric	Laboratory
+obs_486	10/15/2017 07:58:48 AM	pat_10	enc_93	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	5.99	%	numeric	Laboratory
+obs_487	10/15/2017 07:58:48 AM	pat_10	enc_93	8302-2	Body Height	152.6	cm	numeric	Vital signs
+obs_488	10/15/2017 07:58:48 AM	pat_10	enc_93	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	0	{score}	numeric	Vital signs
+obs_489	10/15/2017 07:58:48 AM	pat_10	enc_93	29463-7	Body Weight	65.2	kg	numeric	Vital signs
+obs_490	10/15/2017 07:58:48 AM	pat_10	enc_93	39156-5	Body mass index (BMI) [Ratio]	28	kg/m2	numeric	Vital signs
+obs_491	10/15/2017 07:58:48 AM	pat_10	enc_93	85354-9	Blood pressure panel with all children optional	72	mm[Hg]	numeric	Vital signs
+obs_492	10/15/2017 07:58:48 AM	pat_10	enc_93	8867-4	Heart rate	85	/min	numeric	Vital signs
+obs_493	10/15/2017 07:58:48 AM	pat_10	enc_93	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_494	10/15/2017 07:58:48 AM	pat_10	enc_93	2339-0	Glucose [Mass/volume] in Blood	97.73	mg/dL	numeric	Laboratory
+obs_495	10/15/2017 07:58:48 AM	pat_10	enc_93	6299-2	Urea nitrogen [Mass/volume] in Blood	9.45	mg/dL	numeric	Laboratory
+obs_496	05/15/2019 12:13:09 PM	pat_1	enc_9	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	6.21	%	numeric	Laboratory
+obs_497	05/15/2019 12:13:09 PM	pat_1	enc_9	8302-2	Body Height	174.7	cm	numeric	Vital signs
+obs_498	05/15/2019 12:13:09 PM	pat_1	enc_9	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	3	{score}	numeric	Vital signs
+obs_499	05/15/2019 12:13:09 PM	pat_1	enc_9	29463-7	Body Weight	92.2	kg	numeric	Vital signs
+obs_500	05/15/2019 12:13:09 PM	pat_1	enc_9	39156-5	Body mass index (BMI) [Ratio]	30.21	kg/m2	numeric	Vital signs
+obs_501	05/15/2019 12:13:09 PM	pat_1	enc_9	85354-9	Blood pressure panel with all children optional	61	mm[Hg]	numeric	Vital signs
+obs_502	05/15/2019 12:13:09 PM	pat_1	enc_9	8867-4	Heart rate	83	/min	numeric	Vital signs
+obs_503	05/15/2019 12:13:09 PM	pat_1	enc_9	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_504	05/15/2019 12:13:09 PM	pat_1	enc_9	2339-0	Glucose [Mass/volume] in Blood	87.58	mg/dL	numeric	Laboratory
+obs_505	05/15/2019 12:13:09 PM	pat_1	enc_9	6299-2	Urea nitrogen [Mass/volume] in Blood	18.43	mg/dL	numeric	Laboratory
+obs_506	10/19/2018 12:28:02 PM	pat_6	enc_52	8302-2	Body Height	154.6	cm	numeric	Vital signs
+obs_507	10/19/2018 12:28:02 PM	pat_6	enc_52	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	0	{score}	numeric	Vital signs
+obs_508	10/19/2018 12:28:02 PM	pat_6	enc_52	29463-7	Body Weight	44.3	kg	numeric	Vital signs
+obs_509	10/19/2018 12:28:02 PM	pat_6	enc_52	39156-5	Body mass index (BMI) [Ratio]	18.51	kg/m2	numeric	Vital signs
+obs_510	10/19/2018 12:28:02 PM	pat_6	enc_52	59576-9	Body mass index (BMI) [Percentile] Per age and sex	77.858	%	numeric	Vital signs
+obs_511	10/19/2018 12:28:02 PM	pat_6	enc_52	85354-9	Blood pressure panel with all children optional	74	mm[Hg]	numeric	Vital signs
+obs_512	10/19/2018 12:28:02 PM	pat_6	enc_52	8867-4	Heart rate	74	/min	numeric	Vital signs
+obs_513	10/19/2018 12:28:02 PM	pat_6	enc_52	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_514	10/19/2018 12:28:02 PM	pat_6	enc_52	72166-2	Tobacco smoking status				Social history
+obs_515	07/07/2020 02:50:16 AM	pat_3	enc_23	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	6.39	%	numeric	Laboratory
+obs_516	07/07/2020 02:50:16 AM	pat_3	enc_23	8302-2	Body Height	170.6	cm	numeric	Vital signs
+obs_517	07/07/2020 02:50:16 AM	pat_3	enc_23	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	0	{score}	numeric	Vital signs
+obs_518	07/07/2020 02:50:16 AM	pat_3	enc_23	29463-7	Body Weight	87.8	kg	numeric	Vital signs
+obs_519	07/07/2020 02:50:16 AM	pat_3	enc_23	39156-5	Body mass index (BMI) [Ratio]	30.17	kg/m2	numeric	Vital signs
+obs_520	07/07/2020 02:50:16 AM	pat_3	enc_23	85354-9	Blood pressure panel with all children optional	83	mm[Hg]	numeric	Vital signs
+obs_521	07/07/2020 02:50:16 AM	pat_3	enc_23	8867-4	Heart rate	65	/min	numeric	Vital signs
+obs_522	07/07/2020 02:50:16 AM	pat_3	enc_23	9279-1	Respiratory rate	13	/min	numeric	Vital signs
+obs_523	07/07/2020 02:50:16 AM	pat_3	enc_23	2339-0	Glucose [Mass/volume] in Blood	82.32	mg/dL	numeric	Laboratory
+obs_524	07/07/2020 02:50:16 AM	pat_3	enc_23	6299-2	Urea nitrogen [Mass/volume] in Blood	16.87	mg/dL	numeric	Laboratory
+obs_525	01/21/2019 06:39:01 PM	pat_7	enc_63	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	5.98	%	numeric	Laboratory
+obs_526	01/21/2019 06:39:01 PM	pat_7	enc_63	8302-2	Body Height	171.3	cm	numeric	Vital signs
+obs_527	01/21/2019 06:39:01 PM	pat_7	enc_63	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_528	01/21/2019 06:39:01 PM	pat_7	enc_63	29463-7	Body Weight	86.3	kg	numeric	Vital signs
+obs_529	01/21/2019 06:39:01 PM	pat_7	enc_63	39156-5	Body mass index (BMI) [Ratio]	29.41	kg/m2	numeric	Vital signs
+obs_530	01/21/2019 06:39:01 PM	pat_7	enc_63	85354-9	Blood pressure panel with all children optional	87	mm[Hg]	numeric	Vital signs
+obs_531	01/21/2019 06:39:01 PM	pat_7	enc_63	8867-4	Heart rate	68	/min	numeric	Vital signs
+obs_532	01/21/2019 06:39:01 PM	pat_7	enc_63	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_533	01/21/2019 06:39:01 PM	pat_7	enc_63	2339-0	Glucose [Mass/volume] in Blood	67.92	mg/dL	numeric	Laboratory
+obs_534	01/21/2019 06:39:01 PM	pat_7	enc_63	6299-2	Urea nitrogen [Mass/volume] in Blood	7.1	mg/dL	numeric	Laboratory
+obs_535	04/22/2015 12:13:09 PM	pat_1	enc_5	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	6.39	%	numeric	Laboratory
+obs_536	04/22/2015 12:13:09 PM	pat_1	enc_5	8302-2	Body Height	174.7	cm	numeric	Vital signs
+obs_537	04/22/2015 12:13:09 PM	pat_1	enc_5	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	4	{score}	numeric	Vital signs
+obs_538	04/22/2015 12:13:09 PM	pat_1	enc_5	29463-7	Body Weight	92.2	kg	numeric	Vital signs
+obs_539	04/22/2015 12:13:09 PM	pat_1	enc_5	39156-5	Body mass index (BMI) [Ratio]	30.21	kg/m2	numeric	Vital signs
+obs_540	04/22/2015 12:13:09 PM	pat_1	enc_5	85354-9	Blood pressure panel with all children optional	62	mm[Hg]	numeric	Vital signs
+obs_541	04/22/2015 12:13:09 PM	pat_1	enc_5	8867-4	Heart rate	70	/min	numeric	Vital signs
+obs_542	04/22/2015 12:13:09 PM	pat_1	enc_5	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_543	04/22/2015 12:13:09 PM	pat_1	enc_5	2339-0	Glucose [Mass/volume] in Blood	88.85	mg/dL	numeric	Laboratory
+obs_544	04/22/2015 12:13:09 PM	pat_1	enc_5	6299-2	Urea nitrogen [Mass/volume] in Blood	7.52	mg/dL	numeric	Laboratory
+obs_545	03/09/2020 07:39:01 PM	pat_7	enc_65	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	6.33	%	numeric	Laboratory
+obs_546	03/09/2020 07:39:01 PM	pat_7	enc_65	8302-2	Body Height	171.3	cm	numeric	Vital signs
+obs_547	03/09/2020 07:39:01 PM	pat_7	enc_65	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_548	03/09/2020 07:39:01 PM	pat_7	enc_65	29463-7	Body Weight	80.8	kg	numeric	Vital signs
+obs_549	03/09/2020 07:39:01 PM	pat_7	enc_65	39156-5	Body mass index (BMI) [Ratio]	27.55	kg/m2	numeric	Vital signs
+obs_550	03/09/2020 07:39:01 PM	pat_7	enc_65	85354-9	Blood pressure panel with all children optional	82	mm[Hg]	numeric	Vital signs
+obs_551	03/09/2020 07:39:01 PM	pat_7	enc_65	8867-4	Heart rate	97	/min	numeric	Vital signs
+obs_552	03/09/2020 07:39:01 PM	pat_7	enc_65	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_553	03/09/2020 07:39:01 PM	pat_7	enc_65	2339-0	Glucose [Mass/volume] in Blood	94.87	mg/dL	numeric	Laboratory
+obs_554	03/09/2020 07:39:01 PM	pat_7	enc_65	6299-2	Urea nitrogen [Mass/volume] in Blood	12.41	mg/dL	numeric	Laboratory
+obs_555	07/18/2023 02:50:16 AM	pat_3	enc_25	718-7	Hemoglobin [Mass/volume] in Blood	11.616	g/dL	numeric	Laboratory
+obs_556	07/18/2023 02:50:16 AM	pat_3	enc_25	20570-8	Hematocrit [Volume Fraction] of Blood	34.143	%	numeric	Laboratory
+obs_557	07/18/2023 02:50:16 AM	pat_3	enc_25	6690-2	Leukocytes [#/volume] in Blood by Automated count	10.195	10*3/uL	numeric	Laboratory
+obs_558	07/18/2023 02:50:16 AM	pat_3	enc_25	789-8	Erythrocytes [#/volume] in Blood by Automated count	5.128	10*6/uL	numeric	Laboratory
+obs_559	07/18/2023 02:50:16 AM	pat_3	enc_25	787-2	MCV [Entitic volume] by Automated count	81.872	fL	numeric	Laboratory
+obs_560	07/18/2023 02:50:16 AM	pat_3	enc_25	785-6	MCH [Entitic mass] by Automated count	30.513	pg	numeric	Laboratory
+obs_561	07/18/2023 02:50:16 AM	pat_3	enc_25	786-4	MCHC [Mass/volume] by Automated count	34.404	g/dL	numeric	Laboratory
+obs_562	07/18/2023 02:50:16 AM	pat_3	enc_25	21000-5	Erythrocyte distribution width [Entitic volume] by Automated count	42.233	fL	numeric	Laboratory
+obs_563	07/18/2023 02:50:16 AM	pat_3	enc_25	777-3	Platelets [#/volume] in Blood by Automated count	158.39	10*3/uL	numeric	Laboratory
+obs_564	07/18/2023 02:50:16 AM	pat_3	enc_25	32207-3	Platelet distribution width [Entitic volume] in Blood by Automated count	422.6	fL	numeric	Laboratory
+obs_565	02/15/2017 01:48:13 PM	pat_9	enc_80	8310-5	Body temperature	37.218	Cel	numeric	Vital signs
+obs_566	06/22/2014 07:58:48 AM	pat_10	enc_89	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	5.81	%	numeric	Laboratory
+obs_567	06/22/2014 07:58:48 AM	pat_10	enc_89	8302-2	Body Height	152.6	cm	numeric	Vital signs
+obs_568	06/22/2014 07:58:48 AM	pat_10	enc_89	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	0	{score}	numeric	Vital signs
+obs_569	06/22/2014 07:58:48 AM	pat_10	enc_89	29463-7	Body Weight	65.2	kg	numeric	Vital signs
+obs_570	06/22/2014 07:58:48 AM	pat_10	enc_89	39156-5	Body mass index (BMI) [Ratio]	28	kg/m2	numeric	Vital signs
+obs_571	06/22/2014 07:58:48 AM	pat_10	enc_89	85354-9	Blood pressure panel with all children optional	74	mm[Hg]	numeric	Vital signs
+obs_572	06/22/2014 07:58:48 AM	pat_10	enc_89	8867-4	Heart rate	98	/min	numeric	Vital signs
+obs_573	06/22/2014 07:58:48 AM	pat_10	enc_89	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_574	06/22/2014 07:58:48 AM	pat_10	enc_89	2339-0	Glucose [Mass/volume] in Blood	94.83	mg/dL	numeric	Laboratory
+obs_575	06/22/2014 07:58:48 AM	pat_10	enc_89	6299-2	Urea nitrogen [Mass/volume] in Blood	7.25	mg/dL	numeric	Laboratory
+obs_576	04/24/2016 10:39:24 PM	pat_8	enc_72	8302-2	Body Height	166.4	cm	numeric	Vital signs
+obs_577	04/24/2016 10:39:24 PM	pat_8	enc_72	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	3	{score}	numeric	Vital signs
+obs_578	04/24/2016 10:39:24 PM	pat_8	enc_72	29463-7	Body Weight	79.8	kg	numeric	Vital signs
+obs_579	04/24/2016 10:39:24 PM	pat_8	enc_72	39156-5	Body mass index (BMI) [Ratio]	28.81	kg/m2	numeric	Vital signs
+obs_580	04/24/2016 10:39:24 PM	pat_8	enc_72	85354-9	Blood pressure panel with all children optional	105	mm[Hg]	numeric	Vital signs
+obs_581	04/24/2016 10:39:24 PM	pat_8	enc_72	8867-4	Heart rate	72	/min	numeric	Vital signs
+obs_582	04/24/2016 10:39:24 PM	pat_8	enc_72	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_583	04/24/2016 10:39:24 PM	pat_8	enc_72	6690-2	Leukocytes [#/volume] in Blood by Automated count	5.6191	10*3/uL	numeric	Laboratory
+obs_584	04/24/2016 10:39:24 PM	pat_8	enc_72	789-8	Erythrocytes [#/volume] in Blood by Automated count	5.0876	10*6/uL	numeric	Laboratory
+obs_585	04/24/2016 10:39:24 PM	pat_8	enc_72	718-7	Hemoglobin [Mass/volume] in Blood	15.056	g/dL	numeric	Laboratory
+obs_586	05/17/2020 10:39:24 PM	pat_8	enc_76	8302-2	Body Height	166.4	cm	numeric	Vital signs
+obs_587	05/17/2020 10:39:24 PM	pat_8	enc_76	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_588	05/17/2020 10:39:24 PM	pat_8	enc_76	29463-7	Body Weight	77.3	kg	numeric	Vital signs
+obs_589	05/17/2020 10:39:24 PM	pat_8	enc_76	39156-5	Body mass index (BMI) [Ratio]	27.92	kg/m2	numeric	Vital signs
+obs_590	05/17/2020 10:39:24 PM	pat_8	enc_76	85354-9	Blood pressure panel with all children optional	98	mm[Hg]	numeric	Vital signs
+obs_591	05/17/2020 10:39:24 PM	pat_8	enc_76	8867-4	Heart rate	87	/min	numeric	Vital signs
+obs_592	05/17/2020 10:39:24 PM	pat_8	enc_76	9279-1	Respiratory rate	13	/min	numeric	Vital signs
+obs_593	05/17/2020 10:39:24 PM	pat_8	enc_76	2093-3	Cholesterol [Mass/volume] in Serum or Plasma	162.26	mg/dL	numeric	Laboratory
+obs_594	05/17/2020 10:39:24 PM	pat_8	enc_76	2571-8	Triglycerides	106.37	mg/dL	numeric	Laboratory
+obs_595	05/17/2020 10:39:24 PM	pat_8	enc_76	18262-6	Low Density Lipoprotein Cholesterol	90.68	mg/dL	numeric	Laboratory
+obs_596	04/16/2016 12:38:29 AM	pat_5	enc_42	8302-2	Body Height	106.1	cm	numeric	Vital signs
+obs_597	04/16/2016 12:38:29 AM	pat_5	enc_42	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	2	{score}	numeric	Vital signs
+obs_598	04/16/2016 12:38:29 AM	pat_5	enc_42	29463-7	Body Weight	17.1	kg	numeric	Vital signs
+obs_599	04/16/2016 12:38:29 AM	pat_5	enc_42	39156-5	Body mass index (BMI) [Ratio]	15.2	kg/m2	numeric	Vital signs
+obs_600	04/16/2016 12:38:29 AM	pat_5	enc_42	59576-9	Body mass index (BMI) [Percentile] Per age and sex	41.848	%	numeric	Vital signs
+obs_601	04/16/2016 12:38:29 AM	pat_5	enc_42	85354-9	Blood pressure panel with all children optional	77	mm[Hg]	numeric	Vital signs
+obs_602	04/16/2016 12:38:29 AM	pat_5	enc_42	8867-4	Heart rate	86	/min	numeric	Vital signs
+obs_603	04/16/2016 12:38:29 AM	pat_5	enc_42	9279-1	Respiratory rate	16	/min	numeric	Vital signs
+obs_604	04/16/2016 12:38:29 AM	pat_5	enc_42	72166-2	Tobacco smoking status				Social history
+obs_605	11/01/2020 06:58:48 AM	pat_10	enc_96	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	5.81	%	numeric	Laboratory
+obs_606	11/01/2020 06:58:48 AM	pat_10	enc_96	8302-2	Body Height	152.6	cm	numeric	Vital signs
+obs_607	11/01/2020 06:58:48 AM	pat_10	enc_96	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_608	11/01/2020 06:58:48 AM	pat_10	enc_96	29463-7	Body Weight	65.2	kg	numeric	Vital signs
+obs_609	11/01/2020 06:58:48 AM	pat_10	enc_96	39156-5	Body mass index (BMI) [Ratio]	28	kg/m2	numeric	Vital signs
+obs_610	11/01/2020 06:58:48 AM	pat_10	enc_96	85354-9	Blood pressure panel with all children optional	78	mm[Hg]	numeric	Vital signs
+obs_611	11/01/2020 06:58:48 AM	pat_10	enc_96	8867-4	Heart rate	70	/min	numeric	Vital signs
+obs_612	11/01/2020 06:58:48 AM	pat_10	enc_96	9279-1	Respiratory rate	13	/min	numeric	Vital signs
+obs_613	11/01/2020 06:58:48 AM	pat_10	enc_96	2339-0	Glucose [Mass/volume] in Blood	67.6	mg/dL	numeric	Laboratory
+obs_614	11/01/2020 06:58:48 AM	pat_10	enc_96	6299-2	Urea nitrogen [Mass/volume] in Blood	9.25	mg/dL	numeric	Laboratory
+obs_615	02/03/2014 06:39:01 PM	pat_7	enc_58	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	6.19	%	numeric	Laboratory
+obs_616	02/03/2014 06:39:01 PM	pat_7	enc_58	8302-2	Body Height	171.3	cm	numeric	Vital signs
+obs_617	02/03/2014 06:39:01 PM	pat_7	enc_58	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_618	02/03/2014 06:39:01 PM	pat_7	enc_58	29463-7	Body Weight	81.3	kg	numeric	Vital signs
+obs_619	02/03/2014 06:39:01 PM	pat_7	enc_58	39156-5	Body mass index (BMI) [Ratio]	27.7	kg/m2	numeric	Vital signs
+obs_620	02/03/2014 06:39:01 PM	pat_7	enc_58	85354-9	Blood pressure panel with all children optional	82	mm[Hg]	numeric	Vital signs
+obs_621	02/03/2014 06:39:01 PM	pat_7	enc_58	8867-4	Heart rate	69	/min	numeric	Vital signs
+obs_622	02/03/2014 06:39:01 PM	pat_7	enc_58	9279-1	Respiratory rate	16	/min	numeric	Vital signs
+obs_623	02/03/2014 06:39:01 PM	pat_7	enc_58	2339-0	Glucose [Mass/volume] in Blood	85.83	mg/dL	numeric	Laboratory
+obs_624	02/03/2014 06:39:01 PM	pat_7	enc_58	6299-2	Urea nitrogen [Mass/volume] in Blood	10.93	mg/dL	numeric	Laboratory
+obs_625	10/11/2014 12:38:29 AM	pat_5	enc_40	8302-2	Body Height	96.2	cm	numeric	Vital signs
+obs_626	10/11/2014 12:38:29 AM	pat_5	enc_40	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_627	10/11/2014 12:38:29 AM	pat_5	enc_40	29463-7	Body Weight	15.1	kg	numeric	Vital signs
+obs_628	10/11/2014 12:38:29 AM	pat_5	enc_40	77606-2	Weight-for-length Per age and sex	62.315	%	numeric	Vital signs
+obs_629	10/11/2014 12:38:29 AM	pat_5	enc_40	8289-1	Head Occipital-frontal circumference Percentile	31.99	%	numeric	Vital signs
+obs_630	10/11/2014 12:38:29 AM	pat_5	enc_40	9843-4	Head Occipital-frontal circumference	48.91	cm	numeric	Vital signs
+obs_631	10/11/2014 12:38:29 AM	pat_5	enc_40	39156-5	Body mass index (BMI) [Ratio]	16.28	kg/m2	numeric	Vital signs
+obs_632	10/11/2014 12:38:29 AM	pat_5	enc_40	59576-9	Body mass index (BMI) [Percentile] Per age and sex	65.011	%	numeric	Vital signs
+obs_633	10/11/2014 12:38:29 AM	pat_5	enc_40	85354-9	Blood pressure panel with all children optional	80	mm[Hg]	numeric	Vital signs
+obs_634	10/11/2014 12:38:29 AM	pat_5	enc_40	8867-4	Heart rate	63	/min	numeric	Vital signs
+obs_635	11/20/2020 01:48:13 PM	pat_9	enc_84	8302-2	Body Height	159.4	cm	numeric	Vital signs
+obs_636	11/20/2020 01:48:13 PM	pat_9	enc_84	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_637	11/20/2020 01:48:13 PM	pat_9	enc_84	29463-7	Body Weight	53.1	kg	numeric	Vital signs
+obs_638	11/20/2020 01:48:13 PM	pat_9	enc_84	39156-5	Body mass index (BMI) [Ratio]	20.88	kg/m2	numeric	Vital signs
+obs_639	11/20/2020 01:48:13 PM	pat_9	enc_84	85354-9	Blood pressure panel with all children optional	71	mm[Hg]	numeric	Vital signs
+obs_640	11/20/2020 01:48:13 PM	pat_9	enc_84	8867-4	Heart rate	97	/min	numeric	Vital signs
+obs_641	11/20/2020 01:48:13 PM	pat_9	enc_84	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_642	11/20/2020 01:48:13 PM	pat_9	enc_84	72166-2	Tobacco smoking status				Social history
+obs_643	11/20/2020 02:25:22 PM	pat_9	enc_84	93025-5	Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences [PRAPARE]				Survey
+obs_644	11/20/2020 02:42:11 PM	pat_9	enc_84	70274-6	Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]	0	{score}	numeric	Survey
+obs_645	04/27/2016 12:13:09 PM	pat_1	enc_6	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	6.14	%	numeric	Laboratory
+obs_646	04/27/2016 12:13:09 PM	pat_1	enc_6	8302-2	Body Height	174.7	cm	numeric	Vital signs
+obs_647	04/27/2016 12:13:09 PM	pat_1	enc_6	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	0	{score}	numeric	Vital signs
+obs_648	04/27/2016 12:13:09 PM	pat_1	enc_6	29463-7	Body Weight	92.2	kg	numeric	Vital signs
+obs_649	04/27/2016 12:13:09 PM	pat_1	enc_6	39156-5	Body mass index (BMI) [Ratio]	30.21	kg/m2	numeric	Vital signs
+obs_650	04/27/2016 12:13:09 PM	pat_1	enc_6	85354-9	Blood pressure panel with all children optional	57	mm[Hg]	numeric	Vital signs
+obs_651	04/27/2016 12:13:09 PM	pat_1	enc_6	8867-4	Heart rate	69	/min	numeric	Vital signs
+obs_652	04/27/2016 12:13:09 PM	pat_1	enc_6	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_653	04/27/2016 12:13:09 PM	pat_1	enc_6	2339-0	Glucose [Mass/volume] in Blood	76.36	mg/dL	numeric	Laboratory
+obs_654	04/27/2016 12:13:09 PM	pat_1	enc_6	6299-2	Urea nitrogen [Mass/volume] in Blood	8.8	mg/dL	numeric	Laboratory
+obs_655	03/01/2019 11:38:29 PM	pat_5	enc_46	8302-2	Body Height	123.5	cm	numeric	Vital signs
+obs_656	03/01/2019 11:38:29 PM	pat_5	enc_46	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	4	{score}	numeric	Vital signs
+obs_657	03/01/2019 11:38:29 PM	pat_5	enc_46	29463-7	Body Weight	22.6	kg	numeric	Vital signs
+obs_658	03/01/2019 11:38:29 PM	pat_5	enc_46	39156-5	Body mass index (BMI) [Ratio]	14.82	kg/m2	numeric	Vital signs
+obs_659	03/01/2019 11:38:29 PM	pat_5	enc_46	59576-9	Body mass index (BMI) [Percentile] Per age and sex	26.251	%	numeric	Vital signs
+obs_660	03/01/2019 11:38:29 PM	pat_5	enc_46	85354-9	Blood pressure panel with all children optional	84	mm[Hg]	numeric	Vital signs
+obs_661	03/01/2019 11:38:29 PM	pat_5	enc_46	8867-4	Heart rate	95	/min	numeric	Vital signs
+obs_662	03/01/2019 11:38:29 PM	pat_5	enc_46	9279-1	Respiratory rate	12	/min	numeric	Vital signs
+obs_663	03/01/2019 11:38:29 PM	pat_5	enc_46	72166-2	Tobacco smoking status				Social history
+obs_664	01/29/2019 08:35:07 PM	pat_2	enc_15	718-7	Hemoglobin [Mass/volume] in Blood	10.404	g/dL	numeric	Laboratory
+obs_665	01/29/2019 08:35:07 PM	pat_2	enc_15	20570-8	Hematocrit [Volume Fraction] of Blood	27.424	%	numeric	Laboratory
+obs_666	01/29/2019 08:35:07 PM	pat_2	enc_15	6690-2	Leukocytes [#/volume] in Blood by Automated count	6.3763	10*3/uL	numeric	Laboratory
+obs_667	01/29/2019 08:35:07 PM	pat_2	enc_15	789-8	Erythrocytes [#/volume] in Blood by Automated count	4.4476	10*6/uL	numeric	Laboratory
+obs_668	01/29/2019 08:35:07 PM	pat_2	enc_15	787-2	MCV [Entitic volume] by Automated count	87.881	fL	numeric	Laboratory
+obs_669	01/29/2019 08:35:07 PM	pat_2	enc_15	785-6	MCH [Entitic mass] by Automated count	28.056	pg	numeric	Laboratory
+obs_670	01/29/2019 08:35:07 PM	pat_2	enc_15	786-4	MCHC [Mass/volume] by Automated count	33.802	g/dL	numeric	Laboratory
+obs_671	01/29/2019 08:35:07 PM	pat_2	enc_15	21000-5	Erythrocyte distribution width [Entitic volume] by Automated count	41.588	fL	numeric	Laboratory
+obs_672	01/29/2019 08:35:07 PM	pat_2	enc_15	777-3	Platelets [#/volume] in Blood by Automated count	345.03	10*3/uL	numeric	Laboratory
+obs_673	01/29/2019 08:35:07 PM	pat_2	enc_15	32207-3	Platelet distribution width [Entitic volume] in Blood by Automated count	409.68	fL	numeric	Laboratory
+obs_674	05/04/2019 12:38:29 AM	pat_5	enc_47	8302-2	Body Height	124.5	cm	numeric	Vital signs
+obs_675	05/04/2019 12:38:29 AM	pat_5	enc_47	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	3	{score}	numeric	Vital signs
+obs_676	05/04/2019 12:38:29 AM	pat_5	enc_47	29463-7	Body Weight	23.1	kg	numeric	Vital signs
+obs_677	05/04/2019 12:38:29 AM	pat_5	enc_47	39156-5	Body mass index (BMI) [Ratio]	14.92	kg/m2	numeric	Vital signs
+obs_678	05/04/2019 12:38:29 AM	pat_5	enc_47	59576-9	Body mass index (BMI) [Percentile] Per age and sex	27.789	%	numeric	Vital signs
+obs_679	05/04/2019 12:38:29 AM	pat_5	enc_47	85354-9	Blood pressure panel with all children optional	81	mm[Hg]	numeric	Vital signs
+obs_680	05/04/2019 12:38:29 AM	pat_5	enc_47	8867-4	Heart rate	86	/min	numeric	Vital signs
+obs_681	05/04/2019 12:38:29 AM	pat_5	enc_47	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_682	05/04/2019 12:38:29 AM	pat_5	enc_47	72166-2	Tobacco smoking status				Social history
+obs_683	05/12/2019 10:39:24 PM	pat_8	enc_75	8302-2	Body Height	166.4	cm	numeric	Vital signs
+obs_684	05/12/2019 10:39:24 PM	pat_8	enc_75	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	0	{score}	numeric	Vital signs
+obs_685	05/12/2019 10:39:24 PM	pat_8	enc_75	29463-7	Body Weight	75.2	kg	numeric	Vital signs
+obs_686	05/12/2019 10:39:24 PM	pat_8	enc_75	39156-5	Body mass index (BMI) [Ratio]	27.18	kg/m2	numeric	Vital signs
+obs_687	05/12/2019 10:39:24 PM	pat_8	enc_75	85354-9	Blood pressure panel with all children optional	97	mm[Hg]	numeric	Vital signs
+obs_688	05/12/2019 10:39:24 PM	pat_8	enc_75	8867-4	Heart rate	84	/min	numeric	Vital signs
+obs_689	05/12/2019 10:39:24 PM	pat_8	enc_75	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_690	05/12/2019 10:39:24 PM	pat_8	enc_75	72166-2	Tobacco smoking status				Social history
+obs_691	05/12/2019 11:20:29 PM	pat_8	enc_75	93025-5	Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences [PRAPARE]				Survey
+obs_692	05/12/2019 11:55:09 PM	pat_8	enc_75	82667-7	Total score [DAST-10]	2	{score}	numeric	Survey
+obs_693	01/15/2023 12:28:02 PM	pat_6	enc_57	8310-5	Body temperature	37.691	Cel	numeric	Vital signs
+obs_694	09/28/2014 07:58:48 AM	pat_10	enc_90	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	6.11	%	numeric	Laboratory
+obs_695	09/28/2014 07:58:48 AM	pat_10	enc_90	8302-2	Body Height	152.6	cm	numeric	Vital signs
+obs_696	09/28/2014 07:58:48 AM	pat_10	enc_90	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	0	{score}	numeric	Vital signs
+obs_697	09/28/2014 07:58:48 AM	pat_10	enc_90	29463-7	Body Weight	65.2	kg	numeric	Vital signs
+obs_698	09/28/2014 07:58:48 AM	pat_10	enc_90	39156-5	Body mass index (BMI) [Ratio]	28	kg/m2	numeric	Vital signs
+obs_699	09/28/2014 07:58:48 AM	pat_10	enc_90	85354-9	Blood pressure panel with all children optional	76	mm[Hg]	numeric	Vital signs
+obs_700	09/28/2014 07:58:48 AM	pat_10	enc_90	8867-4	Heart rate	72	/min	numeric	Vital signs
+obs_701	09/28/2014 07:58:48 AM	pat_10	enc_90	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_702	09/28/2014 07:58:48 AM	pat_10	enc_90	2339-0	Glucose [Mass/volume] in Blood	97.79	mg/dL	numeric	Laboratory
+obs_703	09/28/2014 07:58:48 AM	pat_10	enc_90	6299-2	Urea nitrogen [Mass/volume] in Blood	18.6	mg/dL	numeric	Laboratory
+obs_704	02/20/2017 06:39:01 PM	pat_7	enc_61	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	6.26	%	numeric	Laboratory
+obs_705	02/20/2017 06:39:01 PM	pat_7	enc_61	8302-2	Body Height	171.3	cm	numeric	Vital signs
+obs_706	02/20/2017 06:39:01 PM	pat_7	enc_61	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	3	{score}	numeric	Vital signs
+obs_707	02/20/2017 06:39:01 PM	pat_7	enc_61	29463-7	Body Weight	85.7	kg	numeric	Vital signs
+obs_708	02/20/2017 06:39:01 PM	pat_7	enc_61	39156-5	Body mass index (BMI) [Ratio]	29.22	kg/m2	numeric	Vital signs
+obs_709	02/20/2017 06:39:01 PM	pat_7	enc_61	85354-9	Blood pressure panel with all children optional	88	mm[Hg]	numeric	Vital signs
+obs_710	02/20/2017 06:39:01 PM	pat_7	enc_61	8867-4	Heart rate	80	/min	numeric	Vital signs
+obs_711	02/20/2017 06:39:01 PM	pat_7	enc_61	9279-1	Respiratory rate	15	/min	numeric	Vital signs
+obs_712	02/20/2017 06:39:01 PM	pat_7	enc_61	2339-0	Glucose [Mass/volume] in Blood	97.19	mg/dL	numeric	Laboratory
+obs_713	02/20/2017 06:39:01 PM	pat_7	enc_61	6299-2	Urea nitrogen [Mass/volume] in Blood	12.08	mg/dL	numeric	Laboratory
+obs_714	11/05/2021 12:28:02 PM	pat_6	enc_55	8302-2	Body Height	174.9	cm	numeric	Vital signs
+obs_715	11/05/2021 12:28:02 PM	pat_6	enc_55	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_716	11/05/2021 12:28:02 PM	pat_6	enc_55	29463-7	Body Weight	57.2	kg	numeric	Vital signs
+obs_717	11/05/2021 12:28:02 PM	pat_6	enc_55	39156-5	Body mass index (BMI) [Ratio]	18.69	kg/m2	numeric	Vital signs
+obs_718	11/05/2021 12:28:02 PM	pat_6	enc_55	59576-9	Body mass index (BMI) [Percentile] Per age and sex	53.374	%	numeric	Vital signs
+obs_719	11/05/2021 12:28:02 PM	pat_6	enc_55	85354-9	Blood pressure panel with all children optional	81	mm[Hg]	numeric	Vital signs
+obs_720	11/05/2021 12:28:02 PM	pat_6	enc_55	8867-4	Heart rate	99	/min	numeric	Vital signs
+obs_721	11/05/2021 12:28:02 PM	pat_6	enc_55	9279-1	Respiratory rate	13	/min	numeric	Vital signs
+obs_722	11/05/2021 12:28:02 PM	pat_6	enc_55	72166-2	Tobacco smoking status				Social history
+obs_723	11/05/2021 01:08:33 PM	pat_6	enc_55	89204-2	Patient Health Questionnaire-9: Modified for Teens total score [Reported.PHQ.Teen]	1	{score}	numeric	Survey
+obs_724	08/27/2023 11:23:34 AM	pat_4	enc_36	8302-2	Body Height	77.3	cm	numeric	Vital signs
+obs_725	08/27/2023 11:23:34 AM	pat_4	enc_36	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_726	08/27/2023 11:23:34 AM	pat_4	enc_36	29463-7	Body Weight	9.7	kg	numeric	Vital signs
+obs_727	08/27/2023 11:23:34 AM	pat_4	enc_36	77606-2	Weight-for-length Per age and sex	24.975	%	numeric	Vital signs
+obs_728	08/27/2023 11:23:34 AM	pat_4	enc_36	8289-1	Head Occipital-frontal circumference Percentile	81.89	%	numeric	Vital signs
+obs_729	08/27/2023 11:23:34 AM	pat_4	enc_36	9843-4	Head Occipital-frontal circumference	47.37	cm	numeric	Vital signs
+obs_730	08/27/2023 11:23:34 AM	pat_4	enc_36	85354-9	Blood pressure panel with all children optional	75	mm[Hg]	numeric	Vital signs
+obs_731	08/27/2023 11:23:34 AM	pat_4	enc_36	8867-4	Heart rate	98	/min	numeric	Vital signs
+obs_732	08/27/2023 11:23:34 AM	pat_4	enc_36	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_733	08/27/2023 11:23:34 AM	pat_4	enc_36	72166-2	Tobacco smoking status				Social history
+obs_734	10/04/2015 07:58:48 AM	pat_10	enc_91	4548-4	Hemoglobin A1c/Hemoglobin.total in Blood	5.83	%	numeric	Laboratory
+obs_735	10/04/2015 07:58:48 AM	pat_10	enc_91	8302-2	Body Height	152.6	cm	numeric	Vital signs
+obs_736	10/04/2015 07:58:48 AM	pat_10	enc_91	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	2	{score}	numeric	Vital signs
+obs_737	10/04/2015 07:58:48 AM	pat_10	enc_91	29463-7	Body Weight	65.2	kg	numeric	Vital signs
+obs_738	10/04/2015 07:58:48 AM	pat_10	enc_91	39156-5	Body mass index (BMI) [Ratio]	28	kg/m2	numeric	Vital signs
+obs_739	10/04/2015 07:58:48 AM	pat_10	enc_91	85354-9	Blood pressure panel with all children optional	82	mm[Hg]	numeric	Vital signs
+obs_740	10/04/2015 07:58:48 AM	pat_10	enc_91	8867-4	Heart rate	89	/min	numeric	Vital signs
+obs_741	10/04/2015 07:58:48 AM	pat_10	enc_91	9279-1	Respiratory rate	14	/min	numeric	Vital signs
+obs_742	10/04/2015 07:58:48 AM	pat_10	enc_91	2339-0	Glucose [Mass/volume] in Blood	72.01	mg/dL	numeric	Laboratory
+obs_743	10/04/2015 07:58:48 AM	pat_10	enc_91	6299-2	Urea nitrogen [Mass/volume] in Blood	13.42	mg/dL	numeric	Laboratory
+obs_744	07/01/2014 02:50:16 AM	pat_3	enc_21	8302-2	Body Height	170.6	cm	numeric	Vital signs
+obs_745	07/01/2014 02:50:16 AM	pat_3	enc_21	72514-3	Pain severity - 0-10 verbal numeric rating [Score] - Reported	1	{score}	numeric	Vital signs
+obs_746	07/01/2014 02:50:16 AM	pat_3	enc_21	29463-7	Body Weight	87.8	kg	numeric	Vital signs
+obs_747	07/01/2014 02:50:16 AM	pat_3	enc_21	39156-5	Body mass index (BMI) [Ratio]	30.17	kg/m2	numeric	Vital signs
+obs_748	07/01/2014 02:50:16 AM	pat_3	enc_21	85354-9	Blood pressure panel with all children optional	91	mm[Hg]	numeric	Vital signs
+obs_749	07/01/2014 02:50:16 AM	pat_3	enc_21	8867-4	Heart rate	65	/min	numeric	Vital signs
+obs_750	07/01/2014 02:50:16 AM	pat_3	enc_21	9279-1	Respiratory rate	13	/min	numeric	Vital signs
+obs_751	07/01/2014 02:50:16 AM	pat_3	enc_21	72166-2	Tobacco smoking status				Social history
+obs_752	07/01/2014 03:39:48 AM	pat_3	enc_21	93025-5	Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences [PRAPARE]				Survey
+obs_753	07/01/2014 04:18:28 AM	pat_3	enc_21	82667-7	Total score [DAST-10]	1	{score}	numeric	Survey
