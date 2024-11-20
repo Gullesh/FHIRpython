@@ -140,11 +140,6 @@ if args.resource == 'patient':
     patients = tsv_to_fhir_patients(args.data)
     save_to_ndjson(patients, args.output+'.ndjson')
 
-    with open(args.output+'.ndjson', 'r') as file:
-        dataa = [json.loads(line) for line in file]
-
-    print(dataa)
-
 elif args.resource == 'encounter':
 
     # Adding -5 to datetime to comply with Kevin's code/Eastern time
@@ -270,10 +265,6 @@ elif args.resource == 'encounter':
 
     encounters = tsv_to_fhir_encounters(args.data)
     save_to_ndjson(encounters, args.output+'.ndjson')
-    with open(args.output+'.ndjson', 'r') as file:
-        dataa = [json.loads(line) for line in file]
-
-    print(dataa)
 
 elif args.resource == 'observation':
     
@@ -425,10 +416,7 @@ elif args.resource == 'observation':
         return observations
     observations = tsv_to_fhir_observations(args.data)
     save_to_ndjson(observations, args.output+'.ndjson')
-    with open(args.output+'.ndjson', 'r') as file:
-        dataa = [json.loads(line) for line in file]
 
-    print(dataa)
 
 elif args.resource == 'medication-administration':
 
@@ -440,7 +428,7 @@ elif args.resource == 'medication-administration':
         elif isinstance(obj, list):
             for i in range(len(obj)):
                 obj[i] = convert_decimals_to_float(obj[i])
-        elif isinstance(obj, decimal.Decimal):  # Convert Decimal to float
+        elif isinstance(obj, decimal.Decimal):  
             return float(obj)
         return obj
 
@@ -458,7 +446,6 @@ elif args.resource == 'medication-administration':
         if isinstance(record, dict):
             for key, value in record.items():
                 if isinstance(value, datetime):  # If the value is a datetime object
-                    # Convert it to the desired format with timezone offset
                     record[key] = convert_datetime_to_iso(value)
                 elif isinstance(value, list):  # If the value is a list of items
                     for item in value:
@@ -516,9 +503,9 @@ elif args.resource == 'medication-administration':
     
     medadmin = tsv_to_fhir_observations(args.data)
     save_to_ndjson(medadmin, args.output+'.ndjson')
-    with open(args.output+'.ndjson', 'r') as file:
-        dataa = [json.loads(line) for line in file]
 
-    # `data` is now a list of dictionaries (one for each JSON object in the file)
-    print(dataa)
+
+with open(args.output+'.ndjson', 'r') as file:
+    dataa = [json.loads(line) for line in file]
+print(dataa)  
 
