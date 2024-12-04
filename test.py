@@ -1,25 +1,27 @@
 import argparse
 import json
-import fhir.resources
 import pandas as pd
-import re
-from fhir.resources.codeableconcept import CodeableConcept
-from fhir.resources.coding import Coding
-from fhir.resources.period import Period
-from fhir.resources.encounter import Encounter, EncounterLocation
-from fhir.resources.reference import Reference
-from fhir.resources.patient import Patient
-from fhir.resources.humanname import HumanName
-from fhir.resources.address import Address
-from fhir.resources.identifier import Identifier
-from fhir.resources.observation import Observation
-from fhir.resources.quantity import Quantity
-from fhir.resources.medicationadministration import MedicationAdministration
 from datetime import datetime, date, timedelta, timezone
 import json
 import decimal
 import math
 
+from fhir.resources.encounter import Encounter, EncounterLocation
+from fhir.resources.patient import Patient
+from fhir.resources.medicationadministration import MedicationAdministration
+from fhir.resources.observation import Observation
+
+from fhir.resources.codeableconcept import CodeableConcept
+from fhir.resources.coding import Coding
+from fhir.resources.period import Period
+from fhir.resources.reference import Reference
+from fhir.resources.humanname import HumanName
+from fhir.resources.address import Address
+from fhir.resources.identifier import Identifier
+from fhir.resources.quantity import Quantity
+from fhir.resources.observation import ObservationComponent
+
+import fhir.resources
 print('fhir.resources version: ', fhir.resources.__version__)
 parser = argparse.ArgumentParser(description="A script to get TSV files and convert it to FHIR resources.")
 
@@ -30,19 +32,19 @@ parser.add_argument('-r', '--resource', type=str, required=True, help="resource 
 args = parser.parse_args()
 
 
-# Define a function to parse and format birth dates in YYYY-MM-DD format
-def parse_date(date_str):
-    try:
-        birth_date = datetime.strptime(date_str, "%m/%d/%Y").date()
-        return birth_date.isoformat()
-    except ValueError:
-        print(f"Invalid date format for {date_str}. Expected MM/DD/YYYY.")
-        return None
+
 
 
 
 if args.resource == 'patient':
-
+    # Define a function to parse and format birth dates in YYYY-MM-DD format
+    def parse_date(date_str):
+        try:
+            birth_date = datetime.strptime(date_str, "%m/%d/%Y").date()
+            return birth_date.isoformat()
+        except ValueError:
+            print(f"Invalid date format for {date_str}. Expected MM/DD/YYYY.")
+            return None
     # Function to recursively convert datetime.date to string in YYYY-MM-DD format
     def convert_dates(record):
         if isinstance(record, dict):
@@ -61,12 +63,7 @@ if args.resource == 'patient':
         identifier = Identifier(
             type={
                 "coding": [
-                    {
-                        "system": "https://fhir.cerner.com/codeSet/4",
-                        "code": "10",
-                        "display": "MRN",
-                        "userSelected": True
-                    },
+
                     {
                         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
                         "code": "MR",
@@ -141,7 +138,19 @@ if args.resource == 'patient':
     save_to_ndjson(patients, args.output+'.ndjson')
 
 elif args.resource == 'encounter':
-
+    def parse_date(date_str):
+        try:
+            # Parse date and time from the format MM/DD/YYYY HH:MM:SS AM/PM
+            parsed_date = datetime.strptime(date_str, "%m/%d/%Y %I:%M:%S %p")
+            # Set the timezone offset to -05:00
+            offset = timezone(timedelta(hours=-5))
+            # Apply the timezone offset
+            parsed_date_with_offset = parsed_date.replace(tzinfo=offset)
+            # Convert to ISO format (YYYY-MM-DDTHH:MM:SS±HH:MM)
+            return parsed_date_with_offset.isoformat()
+        except ValueError:
+            print(f"Invalid date format for '{date_str}'. Expected format: MM/DD/YYYY HH:MM:SS AM/PM.")
+            return None
     # Adding -5 to datetime to comply with Kevin's code/Eastern time
     def convert_datetime_to_iso(date_obj):
         offset = timezone(timedelta(hours=-5))
@@ -152,7 +161,7 @@ elif args.resource == 'encounter':
     def set_encounter_identifiers(encounter, row):
         identifier = Identifier(
             type={
-                "coding": [{'system': 'https://fhir.cerner.com/codeSet/319',
+                "coding": [{'system': 'https://fhir.cerner.com/1245/codeSet/319',
                 'code': '1077',
                 'display': 'FIN NBR',
                 'userSelected': True}],
@@ -197,7 +206,7 @@ elif args.resource == 'encounter':
     def set_encounter_type(encounter, row):
         type_concept = CodeableConcept(
             coding=[Coding(
-                system="https://snomed.info/sct", 
+                system="http://snomed.info/sct", 
                 code=row['type_code'], 
                 display=row['type_display']
             )],
@@ -210,7 +219,7 @@ elif args.resource == 'encounter':
     def set_encounter_reason(encounter,row):
         coding = CodeableConcept(
             coding = [Coding(
-            system="https://snomed.info/sct",  # SNOMED system for reason codes
+            system="http://snomed.info/sct",  # SNOMED system for reason codes
             code=row['reason_code'],  # Reason code (e.g., SNOMED code)
             display=row['reason_display']  # Display name for the reason (e.g., diagnosis)
         )])
@@ -234,14 +243,14 @@ elif args.resource == 'encounter':
             for item in record:
                 convert_dates(item)  # Recursively handle items in the list
         return record
+    
     # Function to load TSV file, create Encounter resources, and map data to FHIR
     def tsv_to_fhir_encounters(tsv_file):
         df = pd.read_csv(tsv_file, sep='\t',dtype={'zip_code': str})
-        print(df)
         encounters = []
 
         for _, row in df.iterrows():
-            encounter = Encounter(resourceType="Encounter", status="none", class_fhir=Coding(
+            encounter = Encounter(resourceType="Encounter", status="in-progress", class_fhir=Coding(
             system="http://terminology.hl7.org/CodeSystem/v3-ActCode",
             code="IMP"
         ))
@@ -329,18 +338,11 @@ elif args.resource == 'observation':
                 f.write(json.dumps(record) + '\n')
 
     def set_observation_identifiers(observation, row):
-        identifier = Identifier(system = 'UPMC Observation Clincial Event ID',
-                value = row['id'])
+        identifier = Identifier(value = row['id'])
         
         observation.identifier = [identifier]
 
-    def set_observation_component(observation):
-        class_coding = Coding(
-            system="http://terminology.hl7.org/CodeSystem/v3-ActCode",
-            code="IMP"
-        )
-        class_codeable_concept = CodeableConcept(coding=[class_coding])
-        observation.class_fhir = [class_codeable_concept]
+
 
     def set_observation_subject(observation, row):
         subject=Reference(reference=f"{row['patient_id']}")
@@ -354,32 +356,39 @@ elif args.resource == 'observation':
 
     def set_observation_component(observation, row):
         """Sets the component for an Observation resource."""
+        
+        # Always define the `code` field
+        component_code = CodeableConcept(
+            coding=[Coding(
+                system="http://loinc.org",
+                code=row['code'],
+                display=row['code_display']
+            )]
+        )
+        
+        # Initialize the component
+        component = ObservationComponent(code=component_code)
+        
+        # Handle `value[x]` or `dataAbsentReason`
         if row['component_value'] is None or (isinstance(row['component_value'], float) and math.isnan(row['component_value'])):
-            component = {
-                "code": CodeableConcept(
-                    coding=[Coding(
-                        system="https://loinc.org",
-                        code=row['code'],
-                        display=row['code_display']
-                    )]
-                )}
+            component.dataAbsentReason = CodeableConcept(
+                coding=[Coding(
+                    system="http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                    code="not-a-number",  # Use the appropriate absent reason code
+                    display="Not a Number (NaN)"
+                )]
+            )
         else:
-            component = {
-                "code": CodeableConcept(
-                    coding=[Coding(
-                        system="https://loinc.org",
-                        code=row['code'],
-                        display=row['code_display']
-                    )]
-                ),
-                "valueQuantity": Quantity(
-                    value=row['component_value'],
-                    unit=row['component_unit'],
-                    system="https://unitsofmeasure.org",
-                    code=row['component_unit']
-                )
-            }
-        observation.component = [component]  
+            component.valueQuantity = Quantity(
+                value=row['component_value'],  # Ensure Decimal conversion
+                unit=row.get('component_unit', ''),  # Use empty string as fallback for unit
+                system="http://unitsofmeasure.org",
+                code=row.get('component_unit', '')  # Use empty string as fallback for unit code
+            )
+        
+        # Add the component to the observation
+        observation.component = [component] 
+
 
 
     def set_observation_category(observation,row):
@@ -388,13 +397,13 @@ elif args.resource == 'observation':
             coding = [Coding(
             system='http://terminology.hl7.org/CodeSystem/observation-category',  # SNOMED system for reason codes
             code=row['category'],  # Reason code (e.g., SNOMED code)
-            display=row['category']  # Display name for the reason (e.g., diagnosis)
+            display=row['category'].replace("-", " ").title()  # Display name for the reason (e.g., diagnosis)
         )])
         
         
         observation.category = [coding]  
     
-    def create_observation_code(row,  system="https://loinc.org"):
+    def create_observation_code(row,  system="http://loinc.org"):
         """Creates a CodeableConcept for the Observation code."""
         return CodeableConcept(
             coding=[Coding(system=system, code=row['code'], display=row['code_display'])]
@@ -404,7 +413,7 @@ elif args.resource == 'observation':
         observations = []
 
         for _, row in df.iterrows():
-            observation = Observation(resourceType="Observation", status="none", code=create_observation_code(row))
+            observation = Observation(resourceType="Observation", status="registered", code=create_observation_code(row))
             set_observation_identifiers(observation, row)
             set_observation_component(observation, row)
             set_observation_datetime(observation, row)
@@ -485,13 +494,12 @@ elif args.resource == 'medication-administration':
             ,text=row['medication_display'])
     def create_medadmin_status(row):
         """something!"""
-        return row['status']
+        return row['status'].lower()
     def tsv_to_fhir_observations(tsv_file):
         df = pd.read_csv(tsv_file, sep='\t')
         medadmins = []
 
         for _, row in df.iterrows():
-            print(create_medadmin_status(row))
             medadmin = MedicationAdministration(resourceType="MedicationAdministration", 
             status=create_medadmin_status(row), effectiveDateTime=create_medadmin_datetime(row),
             medicationCodeableConcept=create_medadmin_codeableconcept(row), subject=Reference(reference=f"{row['patient_id']}"),
@@ -503,9 +511,18 @@ elif args.resource == 'medication-administration':
     
     medadmin = tsv_to_fhir_observations(args.data)
     save_to_ndjson(medadmin, args.output+'.ndjson')
-
-
+'''
 with open(args.output+'.ndjson', 'r') as file:
     dataa = [json.loads(line) for line in file]
-print(dataa)  
+print(dataa)
 
+
+                    {
+                        #"system": "https://fhir.cerner.com/codeSet/4",
+                        "code": "10",
+                        "display": "MRN",
+                        "userSelected": True
+                    }
+                    
+                    ,
+'''
