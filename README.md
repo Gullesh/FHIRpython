@@ -15,7 +15,7 @@ The output filename is the same as the input filename.
 
 ### Examples
 
-The following examples use the data in this repo in **_sample_health_data_v2.
+The following examples use the data in this repo in *sample_health_data_v2*.
 
 #### Converting Patient Health Data
 
