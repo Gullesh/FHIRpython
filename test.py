@@ -5,7 +5,7 @@ from datetime import datetime, date, timedelta, timezone
 import json
 import decimal
 import math
-
+import functions as fun
 from fhir.resources.encounter import Encounter, EncounterLocation
 from fhir.resources.patient import Patient
 from fhir.resources.medicationadministration import MedicationAdministration
@@ -31,32 +31,7 @@ parser.add_argument('-r', '--resource', type=str, required=True, help="resource 
 
 args = parser.parse_args()
 
-
-
-
-
-
 if args.resource == 'patient':
-    # Define a function to parse and format birth dates in YYYY-MM-DD format
-    def parse_date(date_str):
-        try:
-            birth_date = datetime.strptime(date_str, "%m/%d/%Y").date()
-            return birth_date.isoformat()
-        except ValueError:
-            print(f"Invalid date format for {date_str}. Expected MM/DD/YYYY.")
-            return None
-    # Function to recursively convert datetime.date to string in YYYY-MM-DD format
-    def convert_dates(record):
-        if isinstance(record, dict):
-            for key, value in record.items():
-                if isinstance(value, date):  # If the value is a date object
-                    record[key] = value.strftime('%Y-%m-%d')  # Convert it to a string
-                elif isinstance(value, list):  # If the value is a list of items
-                    for item in value:
-                        convert_dates(item)  # Recursively handle nested dictionaries
-                else:
-                    convert_dates(value)  # Recursively handle nested dictionaries in the value
-        return record
     
     # Set the patient ID as identifier
     def set_patient_identifiers(patient, row):
@@ -105,7 +80,7 @@ if args.resource == 'patient':
 
     # Set the Patient's birthdate
     def set_patient_birthdate(patient, birth_date_str):
-        birth_date = parse_date(birth_date_str)
+        birth_date = fun.birth_date(birth_date_str)
         if birth_date:
             patient.birthDate = birth_date  
 
@@ -126,37 +101,19 @@ if args.resource == 'patient':
         
         return patients
 
-    # Function to save the FHIR resources in NDJSON format
-    def save_to_ndjson(data, output_file):
-        with open(output_file, 'w') as f:
-            for record in data:
-                # Convert dates before writing
-                record = convert_dates(record)
-                f.write(json.dumps(record) + '\n')
 
     patients = tsv_to_fhir_patients(args.data)
-    save_to_ndjson(patients, args.output+'.ndjson')
+    fun.save_to_ndjson(patients, args.output+'.ndjson')
+
+
 
 elif args.resource == 'encounter':
-    def parse_date(date_str):
-        try:
-            # Parse date and time from the format MM/DD/YYYY HH:MM:SS AM/PM
-            parsed_date = datetime.strptime(date_str, "%m/%d/%Y %I:%M:%S %p")
-            # Set the timezone offset to -05:00
-            offset = timezone(timedelta(hours=-5))
-            # Apply the timezone offset
-            parsed_date_with_offset = parsed_date.replace(tzinfo=offset)
-            # Convert to ISO format (YYYY-MM-DDTHH:MM:SS±HH:MM)
-            return parsed_date_with_offset.isoformat()
-        except ValueError:
-            print(f"Invalid date format for '{date_str}'. Expected format: MM/DD/YYYY HH:MM:SS AM/PM.")
-            return None
-    # Adding -5 to datetime to comply with Kevin's code/Eastern time
+    """    # Adding -5 to datetime to comply with Kevin's code/Eastern time
     def convert_datetime_to_iso(date_obj):
         offset = timezone(timedelta(hours=-5))
         if date_obj.tzinfo is None:
             date_obj = date_obj.replace(tzinfo=offset)
-        return date_obj.isoformat()
+        return date_obj.isoformat()"""
     # Set the encounter ID as identifier
     def set_encounter_identifiers(encounter, row):
         identifier = Identifier(
@@ -191,8 +148,8 @@ elif args.resource == 'encounter':
     # Setting the period that encounter happens
     def set_encounter_period(encounter, row):
         period = Period(
-        start=parse_date(row['start']),
-        end=parse_date(row['end']))
+        start=fun.parse_date(row['start']),
+        end=fun.parse_date(row['end']))
         encounter.period = period
 
     # Setting the location of the encounter
@@ -227,22 +184,6 @@ elif args.resource == 'encounter':
         
         encounter.reasonCode = [coding]  
 
-    # Function to recursively convert datetime.date to string in YYYY-MM-DD format
-    def convert_dates(record):
-        if isinstance(record, dict):
-            for key, value in record.items():
-                if isinstance(value, datetime):  # If the value is a datetime object
-                    # Convert it to the desired format with timezone offset
-                    record[key] = convert_datetime_to_iso(value)
-                elif isinstance(value, list):  # If the value is a list of items
-                    for item in value:
-                        convert_dates(item)  # Recursively handle nested dictionaries
-                else:
-                    convert_dates(value)  # Recursively handle nested dictionaries in the value
-        elif isinstance(record, list):  # Handle lists outside of dicts
-            for item in record:
-                convert_dates(item)  # Recursively handle items in the list
-        return record
     
     # Function to load TSV file, create Encounter resources, and map data to FHIR
     def tsv_to_fhir_encounters(tsv_file):
@@ -263,85 +204,16 @@ elif args.resource == 'encounter':
             encounters.append(encounter.dict())
         
         return encounters
-    # Saving the FHIR resources to NJSON file
-    def save_to_ndjson(data, output_file):
-        with open(output_file, 'w') as f:
-            for record in data:
-                # Convert dates before writing
-                record = convert_dates(record)
-                # Convert each OrderedDict to JSON and write it to the file
-                f.write(json.dumps(record) + '\n')
 
     encounters = tsv_to_fhir_encounters(args.data)
-    save_to_ndjson(encounters, args.output+'.ndjson')
+    fun.save_to_ndjson(encounters, args.output+'.ndjson')
 
 elif args.resource == 'observation':
-    
-    # component value in observations needed to be converted to float from Decimal in order to be saved in NDJSON file
-    def convert_decimals_to_float(obj):
-    
-        if isinstance(obj, dict):
-            for key, value in obj.items():
-                obj[key] = convert_decimals_to_float(value)
-        elif isinstance(obj, list):
-            for i in range(len(obj)):
-                obj[i] = convert_decimals_to_float(obj[i])
-        elif isinstance(obj, decimal.Decimal):  
-            return float(obj)
-        return obj
-    
-    # Parsing datetime
-    def parse_date(date_str):
-        try:
-            parsed_date = datetime.strptime(date_str, "%m/%d/%Y %I:%M:%S %p")
-            # Set the timezone offset to -05:00 / Eastern time
-            offset = timezone(timedelta(hours=-5))
-            parsed_date_with_offset = parsed_date.replace(tzinfo=offset)
-            # Convert to ISO format (YYYY-MM-DDTHH:MM:SS±HH:MM)
-            return parsed_date_with_offset.isoformat()
-        except ValueError:
-            print(f"Invalid date format for '{date_str}'. Expected format: MM/DD/YYYY HH:MM:SS AM/PM.")
-            return None
-            
-    def convert_dates(record):
-        if isinstance(record, dict):
-            for key, value in record.items():
-                if isinstance(value, datetime):  # If the value is a datetime object
-                    # Convert it to the desired format with timezone offset
-                    record[key] = convert_datetime_to_iso(value)
-                elif isinstance(value, list):  # If the value is a list of items
-                    for item in value:
-                        convert_dates(item)  # Recursively handle nested dictionaries
-                else:
-                    convert_dates(value)  # Recursively handle nested dictionaries in the value
-        elif isinstance(record, list):  # Handle lists outside of dicts
-            for item in record:
-                convert_dates(item)  # Recursively handle items in the list
-        return record
-
-    def convert_datetime_to_iso(date_obj):
-        # Assuming the input datetime is naive, and you want to apply a timezone of -05:00
-        offset = timezone(timedelta(hours=-5))
-        # Convert naive datetime to timezone-aware datetime
-        if date_obj.tzinfo is None:
-            date_obj = date_obj.replace(tzinfo=offset)
-        # Return the ISO format with timezone offset
-        return date_obj.isoformat()
-
-    def save_to_ndjson(data, output_file):
-        with open(output_file, 'w') as f:
-            for record in data:
-                # Convert dates before writing
-                record = convert_dates(record)
-                record = convert_decimals_to_float(record)
-                # Convert each OrderedDict to JSON and write it to the file
-                f.write(json.dumps(record) + '\n')
 
     def set_observation_identifiers(observation, row):
         identifier = Identifier(value = row['id'])
         
         observation.identifier = [identifier]
-
 
 
     def set_observation_subject(observation, row):
@@ -351,7 +223,7 @@ elif args.resource == 'observation':
         subject=Reference(reference=f"{row['encounter_id']}")
         observation.encounter = subject
     def set_observation_datetime(observation, row):
-        start=parse_date(row['effective'])
+        start=fun.parse_date(row['effective'])
         observation.effectiveDateTime = start
 
     def set_observation_component(observation, row):
@@ -387,9 +259,8 @@ elif args.resource == 'observation':
             )
         
         # Add the component to the observation
-        observation.component = [component] 
 
-
+        observation.component = [component]
 
     def set_observation_category(observation,row):
         # Create the Coding object for the reason
@@ -424,67 +295,17 @@ elif args.resource == 'observation':
         
         return observations
     observations = tsv_to_fhir_observations(args.data)
-    save_to_ndjson(observations, args.output+'.ndjson')
+    fun.save_to_ndjson(observations, args.output+'.ndjson')
 
 
 elif args.resource == 'medication-administration':
 
-    def convert_decimals_to_float(obj):
-        """Recursively converts Decimal values in a dictionary or list to floats."""
-        if isinstance(obj, dict):
-            for key, value in obj.items():
-                obj[key] = convert_decimals_to_float(value)
-        elif isinstance(obj, list):
-            for i in range(len(obj)):
-                obj[i] = convert_decimals_to_float(obj[i])
-        elif isinstance(obj, decimal.Decimal):  
-            return float(obj)
-        return obj
-
-    def parse_date(date_str):
-        try:
-            parsed_date = datetime.strptime(date_str, "%m/%d/%Y %I:%M:%S %p")
-            offset = timezone(timedelta(hours=-5))
-            parsed_date_with_offset = parsed_date.replace(tzinfo=offset)
-            return parsed_date_with_offset.isoformat()
-        except ValueError:
-            print(f"Invalid date format for '{date_str}'. Expected format: MM/DD/YYYY HH:MM:SS AM/PM.")
-            return None
-            
-    def convert_dates(record):
-        if isinstance(record, dict):
-            for key, value in record.items():
-                if isinstance(value, datetime):  # If the value is a datetime object
-                    record[key] = convert_datetime_to_iso(value)
-                elif isinstance(value, list):  # If the value is a list of items
-                    for item in value:
-                        convert_dates(item)  # Recursively handle nested dictionaries
-                else:
-                    convert_dates(value)  # Recursively handle nested dictionaries in the value
-        elif isinstance(record, list):  # Handle lists outside of dicts
-            for item in record:
-                convert_dates(item)  # Recursively handle items in the list
-        return record
-
-    def convert_datetime_to_iso(date_obj):
-        offset = timezone(timedelta(hours=-5))
-        if date_obj.tzinfo is None:
-            date_obj = date_obj.replace(tzinfo=offset)
-        return date_obj.isoformat()
-
-    def save_to_ndjson(data, output_file):
-        with open(output_file, 'w') as f:
-            for record in data:
-                record = convert_dates(record)
-                record = convert_decimals_to_float(record)
-                f.write(json.dumps(record) + '\n')
-
     def set_medadmin_identifiers(medadmin, row):
-        identifier = Identifier(system = 'UPMC Custom Medication Administration ID',
-                value = row['id'])
-    
+        identifier = Identifier(value = row['id'])
+        medadmin.identifier = [identifier]
+
     def create_medadmin_datetime(row):
-        return parse_date(row['effective'])
+        return fun.parse_date(row['effective'])
 
 
     def create_medadmin_codeableconcept(row):
@@ -510,19 +331,4 @@ elif args.resource == 'medication-administration':
         return medadmins
     
     medadmin = tsv_to_fhir_observations(args.data)
-    save_to_ndjson(medadmin, args.output+'.ndjson')
-'''
-with open(args.output+'.ndjson', 'r') as file:
-    dataa = [json.loads(line) for line in file]
-print(dataa)
-
-
-                    {
-                        #"system": "https://fhir.cerner.com/codeSet/4",
-                        "code": "10",
-                        "display": "MRN",
-                        "userSelected": True
-                    }
-                    
-                    ,
-'''
+    fun.save_to_ndjson(medadmin, args.output+'.ndjson')
