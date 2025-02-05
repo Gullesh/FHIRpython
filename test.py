@@ -10,6 +10,7 @@ from fhir.resources.encounter import Encounter, EncounterLocation
 from fhir.resources.patient import Patient
 from fhir.resources.medicationadministration import MedicationAdministration
 from fhir.resources.observation import Observation
+from fhir.resources.extension import Extension
 
 from fhir.resources.codeableconcept import CodeableConcept
 from fhir.resources.coding import Coding
@@ -225,42 +226,112 @@ elif args.resource == 'observation':
     def set_observation_datetime(observation, row):
         start=fun.parse_date(row['effective'])
         observation.effectiveDateTime = start
-
+    
+    
     def set_observation_component(observation, row):
         """Sets the component for an Observation resource."""
-        
-        # Always define the `code` field
-        component_code = CodeableConcept(
-            coding=[Coding(
-                system="http://loinc.org",
-                code=row['code'],
-                display=row['code_display']
-            )]
-        )
-        
-        # Initialize the component
-        component = ObservationComponent(code=component_code)
-        
-        # Handle `value[x]` or `dataAbsentReason`
-        if row['component_value'] is None or (isinstance(row['component_value'], float) and math.isnan(row['component_value'])):
-            component.dataAbsentReason = CodeableConcept(
-                coding=[Coding(
-                    system="http://terminology.hl7.org/CodeSystem/data-absent-reason",
-                    code="not-a-number",  # Use the appropriate absent reason code
-                    display="Not a Number (NaN)"
-                )]
-            )
-        else:
-            component.valueQuantity = Quantity(
-                value=row['component_value'],  # Ensure Decimal conversion
-                unit=row.get('component_unit', ''),  # Use empty string as fallback for unit
-                system="http://unitsofmeasure.org",
-                code=row.get('component_unit', '')  # Use empty string as fallback for unit code
-            )
-        
-        # Add the component to the observation
+        if row['code'] == '85354-9':  # LOINC code for Blood Pressure Panel
+            
+            components = []
 
-        observation.component = [component]
+            # 🩸 **Systolic Blood Pressure Component**
+            systolic_component = ObservationComponent(
+                extension=[
+                    Extension(
+                        url="http://hl7.org/fhir/StructureDefinition/observation-componentCategory",
+                        valueCodeableConcept=CodeableConcept(
+                            coding=[Coding(
+                                system="http://loinc.org",
+                                code="8480-6",
+                                display="Systolic blood pressure"
+                            )]
+                        )
+                    )
+                ],
+                code=CodeableConcept(
+                    coding=[Coding(
+                        system="http://loinc.org",
+                        code="8480-6",
+                        display="Systolic blood pressure"
+                    )]
+                )
+            )
+            
+            # If `systolic_value` is missing, add dataAbsentReason
+            if pd.isna(row.get("systolic_value")):
+                systolic_component.dataAbsentReason = CodeableConcept(
+                    coding=[Coding(
+                        system="http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                        code="unknown",
+                        display="Unknown"
+                    )]
+                )
+            else:
+                systolic_component.valueQuantity = Quantity(
+                    value=row["systolic_value"],
+                    unit=row.get("systolic_unit", "mmHg"),
+                    system="http://unitsofmeasure.org",
+                    code="mm[Hg]"
+                )
+            
+            components.append(systolic_component)
+
+            # 💙 **Diastolic Blood Pressure Component**
+            diastolic_component = ObservationComponent(
+                extension=[
+                    Extension(
+                        url="http://hl7.org/fhir/StructureDefinition/observation-componentCategory",
+                        valueCodeableConcept=CodeableConcept(
+                            coding=[Coding(
+                                system="http://loinc.org",
+                                code="8462-4",
+                                display="Diastolic blood pressure"
+                            )]
+                        )
+                    )
+                ],
+                code=CodeableConcept(
+                    coding=[Coding(
+                        system="http://loinc.org",
+                        code="8462-4",
+                        display="Diastolic blood pressure"
+                    )]
+                )
+            )
+
+            # If `diastolic_value` is missing, add dataAbsentReason
+            if pd.isna(row.get("diastolic_value")):
+                diastolic_component.dataAbsentReason = CodeableConcept(
+                    coding=[Coding(
+                        system="http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                        code="unknown",
+                        display="Unknown"
+                    )]
+                )
+            else:
+                diastolic_component.valueQuantity = Quantity(
+                    value=row["diastolic_value"],
+                    unit=row.get("diastolic_unit", "mmHg"),
+                    system="http://unitsofmeasure.org",
+                    code="mm[Hg]"
+                )
+
+            components.append(diastolic_component)
+
+            # 🔄 Assign components to the observation
+            observation.component = components
+
+    def create_value_quantity(row: dict):
+        if row['code'] == '85354-9': 
+            return None
+        else:
+            return Quantity(
+                value=row['component_value'],
+                unit=row.get('component_unit', ''),
+                system="http://unitsofmeasure.org",
+                code=row.get('component_unit', '')
+            )
+
 
     def set_observation_category(observation,row):
         # Create the Coding object for the reason
@@ -276,15 +347,32 @@ elif args.resource == 'observation':
     
     def create_observation_code(row,  system="http://loinc.org"):
         """Creates a CodeableConcept for the Observation code."""
-        return CodeableConcept(
-            coding=[Coding(system=system, code=row['code'], display=row['code_display'])]
+        if row['code'] == '2713-6':
+            return CodeableConcept(
+            coding=[Coding(system=system, code='2708-6', display="Oxygen saturation in Arterial blood")]
         )
+        else:
+            return CodeableConcept(
+                coding=[Coding(system=system, code=row['code'], display=row['code_display'])]
+            )
     def tsv_to_fhir_observations(tsv_file):
         df = pd.read_csv(tsv_file, sep='\t')
         observations = []
-
-        for _, row in df.iterrows():
-            observation = Observation(resourceType="Observation", status="registered", code=create_observation_code(row))
+        for i, row in df.iterrows():
+            #print(i, row['component_value'])
+            if row['component_value'] is None or (isinstance(row['component_value'], float) and math.isnan(row['component_value'])):
+                observation = Observation(
+                resourceType="Observation",
+                status="registered",
+                code=create_observation_code(row)
+            )
+            else:
+                observation = Observation(
+                resourceType="Observation",
+                status="registered",
+                code=create_observation_code(row),
+                valueQuantity = create_value_quantity(row)  # Directly use valueQuantity
+            )
             set_observation_identifiers(observation, row)
             set_observation_component(observation, row)
             set_observation_datetime(observation, row)

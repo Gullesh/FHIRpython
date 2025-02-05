@@ -5,7 +5,7 @@ from datetime import datetime, date, timedelta, timezone
 import json
 import decimal
 import math
-
+import functions as fun
 from fhir.resources.encounter import Encounter, EncounterLocation
 from fhir.resources.patient import Patient
 from fhir.resources.medicationadministration import MedicationAdministration
@@ -31,41 +31,14 @@ parser.add_argument('-r', '--resource', type=str, required=True, help="resource 
 
 args = parser.parse_args()
 
-class PatientFHIRProcessor:
-    def __init__(self, tsv_file, output_file):
-        self.tsv_file = tsv_file
-        self.output_file = output_file
-
-    @staticmethod
-    def parse_date(date_str):
-        """Parse and format birth dates in YYYY-MM-DD format."""
-        try:
-            birth_date = datetime.strptime(date_str, "%m/%d/%Y").date()
-            return birth_date.isoformat()
-        except ValueError:
-            print(f"Invalid date format for {date_str}. Expected MM/DD/YYYY.")
-            return None
-
-    @staticmethod
-    def convert_dates(record):
-        """Recursively convert datetime.date to string in YYYY-MM-DD format."""
-        if isinstance(record, dict):
-            for key, value in record.items():
-                if isinstance(value, date):
-                    record[key] = value.strftime('%Y-%m-%d')
-                elif isinstance(value, list):
-                    for item in value:
-                        PatientFHIRProcessor.convert_dates(item)
-                else:
-                    PatientFHIRProcessor.convert_dates(value)
-        return record
-
-    @staticmethod
+if args.resource == 'patient':
+    
+    # Set the patient ID as identifier
     def set_patient_identifiers(patient, row):
-        """Set the patient ID as identifier."""
         identifier = Identifier(
             type={
                 "coding": [
+
                     {
                         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
                         "code": "MR",
@@ -79,15 +52,13 @@ class PatientFHIRProcessor:
         )
         patient.identifier = [identifier]
 
-    @staticmethod
+    # Set the Patient Name
     def set_patient_names(patient, row):
-        """Set the Patient Name."""
         name = HumanName(use="official", family=row.get('last_name', ''), given=[row.get('first_name', '')])
         patient.name = [name]
-
-    @staticmethod
+    
+    # Set the Patient's gender
     def set_patient_gender(patient, gender_str):
-        """Set the Patient's gender."""
         gender_map = {
             "male": "male",
             "m": "male",
@@ -96,9 +67,8 @@ class PatientFHIRProcessor:
         }
         patient.gender = gender_map.get(gender_str.lower(), "unknown")
 
-    @staticmethod
+    # Set the Patient's address
     def set_patient_address(patient, row):
-        """Set the Patient's address."""
         address = Address(
             line=[row.get('address', '')],
             city=row.get('city', ''),
@@ -108,46 +78,263 @@ class PatientFHIRProcessor:
         )
         patient.address = [address]
 
-    @staticmethod
+    # Set the Patient's birthdate
     def set_patient_birthdate(patient, birth_date_str):
-        """Set the Patient's birthdate."""
-        birth_date = PatientFHIRProcessor.parse_date(birth_date_str)
+        birth_date = fun.birth_date(birth_date_str)
         if birth_date:
-            patient.birthDate = birth_date
+            patient.birthDate = birth_date  
 
-    def tsv_to_fhir_patients(self):
-        """Load TSV file, create Patient resources, and map data to FHIR."""
-        df = pd.read_csv(self.tsv_file, sep='\t', dtype={'zip_code': str})
+    # Function to load TSV file, create Patient resources, and map data to FHIR 
+    def tsv_to_fhir_patients(tsv_file):
+        df = pd.read_csv(tsv_file, sep='\t',dtype={'zip_code': str})
         df['zip_code'] = df['zip_code'].astype(str)
         patients = []
 
         for _, row in df.iterrows():
             patient = Patient(resourceType="Patient")
-            self.set_patient_identifiers(patient, row)
-            self.set_patient_names(patient, row)
-            self.set_patient_gender(patient, row.get('gender', ''))
-            self.set_patient_address(patient, row)
-            self.set_patient_birthdate(patient, row.get('birth_date', ''))
+            set_patient_identifiers(patient, row)
+            set_patient_names(patient, row)
+            set_patient_gender(patient, row.get('gender', ''))
+            set_patient_address(patient, row)
+            set_patient_birthdate(patient, row.get('birth_date', ''))
             patients.append(patient.dict())
-
+        
         return patients
 
-    def save_to_ndjson(self, data):
-        """Save the FHIR resources in NDJSON format."""
-        with open(self.output_file, 'w') as f:
-            for record in data:
-                # Convert dates before writing
-                record = self.convert_dates(record)
-                f.write(json.dumps(record) + '\n')
 
-    def process(self):
-        """Main processing method to handle the entire workflow."""
-        patients = self.tsv_to_fhir_patients()
-        self.save_to_ndjson(patients)
+    patients = tsv_to_fhir_patients(args.data)
+    fun.save_to_ndjson(patients, args.output+'.ndjson')
 
 
-# Usage
-if args.resource == "patient":
 
-    processor = PatientFHIRProcessor(tsv_file=args.data, output_file=args.output + '.ndjson')
-    processor.process()
+elif args.resource == 'encounter':
+    """    # Adding -5 to datetime to comply with Kevin's code/Eastern time
+    def convert_datetime_to_iso(date_obj):
+        offset = timezone(timedelta(hours=-5))
+        if date_obj.tzinfo is None:
+            date_obj = date_obj.replace(tzinfo=offset)
+        return date_obj.isoformat()"""
+    # Set the encounter ID as identifier
+    def set_encounter_identifiers(encounter, row):
+        identifier = Identifier(
+            type={
+                "coding": [{'system': 'https://fhir.cerner.com/1245/codeSet/319',
+                'code': '1077',
+                'display': 'FIN NBR',
+                'userSelected': True}],
+                "text": "FIN NBR"
+            },
+            system="urn:oid:2.16.840.1.113883.3.552",
+            value=row['id']
+        )
+        encounter.identifier = [identifier]
+    # Setting the class of encounter
+    def set_encounter_class(encounter):
+        # Create the Coding object
+        class_coding = Coding(
+            system="http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            code="IMP"
+        )
+        
+        class_codeable_concept = CodeableConcept(coding=[class_coding])
+        
+        encounter.class_fhir = [class_codeable_concept]
+
+    # Setting the patient's ID related to the encounter
+    def set_encounter_subject(encounter, row):
+        subject=Reference(reference=f"{row['patient_id']}")
+        encounter.subject = subject
+
+    # Setting the period that encounter happens
+    def set_encounter_period(encounter, row):
+        period = Period(
+        start=fun.parse_date(row['start']),
+        end=fun.parse_date(row['end']))
+        encounter.period = period
+
+    # Setting the location of the encounter
+    def set_encounter_location(encounter, row):
+        encounter_location = EncounterLocation(
+            location=Reference(reference=f"{row['location_id']}", display=row['location_display'])
+        )
+        encounter.location = [encounter_location]
+
+    # Setting the type of encounter along with its code and name
+    def set_encounter_type(encounter, row):
+        type_concept = CodeableConcept(
+            coding=[Coding(
+                system="http://snomed.info/sct", 
+                code=row['type_code'], 
+                display=row['type_display']
+            )],
+            text=row['type_display']  
+        )
+        
+        encounter.type = [type_concept]
+
+    # Setting the reason code for the encounter
+    def set_encounter_reason(encounter,row):
+        coding = CodeableConcept(
+            coding = [Coding(
+            system="http://snomed.info/sct",  # SNOMED system for reason codes
+            code=row['reason_code'],  # Reason code (e.g., SNOMED code)
+            display=row['reason_display']  # Display name for the reason (e.g., diagnosis)
+        )])
+        
+        
+        encounter.reasonCode = [coding]  
+
+    
+    # Function to load TSV file, create Encounter resources, and map data to FHIR
+    def tsv_to_fhir_encounters(tsv_file):
+        df = pd.read_csv(tsv_file, sep='\t',dtype={'zip_code': str})
+        encounters = []
+
+        for _, row in df.iterrows():
+            encounter = Encounter(resourceType="Encounter", status="in-progress", class_fhir=Coding(
+            system="http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            code="IMP"
+        ))
+            set_encounter_identifiers(encounter, row)
+            set_encounter_type(encounter, row)
+            set_encounter_period(encounter, row)
+            set_encounter_subject(encounter, row)
+            set_encounter_location(encounter, row)
+            set_encounter_reason(encounter, row)
+            encounters.append(encounter.dict())
+        
+        return encounters
+
+    encounters = tsv_to_fhir_encounters(args.data)
+    fun.save_to_ndjson(encounters, args.output+'.ndjson')
+
+elif args.resource == 'observation':
+
+    def set_observation_identifiers(observation, row):
+        identifier = Identifier(value = row['id'])
+        
+        observation.identifier = [identifier]
+
+
+    def set_observation_subject(observation, row):
+        subject=Reference(reference=f"{row['patient_id']}")
+        observation.subject = subject
+    def set_observation_encounter(observation, row):
+        subject=Reference(reference=f"{row['encounter_id']}")
+        observation.encounter = subject
+    def set_observation_datetime(observation, row):
+        start=fun.parse_date(row['effective'])
+        observation.effectiveDateTime = start
+    
+    
+    def set_observation_component(observation, row):
+        """Sets the component for an Observation resource."""
+        
+        # Always define the `code` field
+        component_code = CodeableConcept(
+            coding=[Coding(
+                system="http://loinc.org",
+                code=row['code'],
+                display=row['code_display']
+            )]
+        )
+        
+        # Initialize the component
+        component = ObservationComponent(code=component_code)
+        
+        # Handle `value[x]` or `dataAbsentReason`
+        if row['component_value'] is None or (isinstance(row['component_value'], float) and math.isnan(row['component_value'])):
+            component.dataAbsentReason = CodeableConcept(
+                coding=[Coding(
+                    system="http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                    code="not-a-number",  # Use the appropriate absent reason code
+                    display="Not a Number (NaN)"
+                )]
+            )
+        else:
+            component.valueQuantity = Quantity(
+                value=row['component_value'],  # Ensure Decimal conversion
+                unit=row.get('component_unit', ''),  # Use empty string as fallback for unit
+                system="http://unitsofmeasure.org",
+                code=row.get('component_unit', '')  # Use empty string as fallback for unit code
+            )
+        
+        # Add the component to the observation
+
+        observation.component = [component]
+
+
+    def set_observation_category(observation,row):
+        # Create the Coding object for the reason
+        coding = CodeableConcept(
+            coding = [Coding(
+            system='http://terminology.hl7.org/CodeSystem/observation-category',  # SNOMED system for reason codes
+            code=row['category'],  # Reason code (e.g., SNOMED code)
+            display=row['category'].replace("-", " ").title()  # Display name for the reason (e.g., diagnosis)
+        )])
+        
+        
+        observation.category = [coding]  
+    
+    def create_observation_code(row,  system="http://loinc.org"):
+        """Creates a CodeableConcept for the Observation code."""
+        return CodeableConcept(
+            coding=[Coding(system=system, code=row['code'], display=row['code_display'])]
+        )
+    def tsv_to_fhir_observations(tsv_file):
+        df = pd.read_csv(tsv_file, sep='\t')
+        observations = []
+        for i, row in df.iterrows():
+            #print(i, row['component_value'])
+            observation = Observation(
+            resourceType="Observation",
+            status="registered",
+            code=create_observation_code(row))
+
+            set_observation_identifiers(observation, row)
+            set_observation_component(observation, row)
+            set_observation_datetime(observation, row)
+            set_observation_subject(observation, row)
+            set_observation_encounter(observation, row)
+            set_observation_category(observation, row)
+            observations.append(observation.dict())
+        
+        return observations
+    observations = tsv_to_fhir_observations(args.data)
+    fun.save_to_ndjson(observations, args.output+'.ndjson')
+
+
+elif args.resource == 'medication-administration':
+
+    def set_medadmin_identifiers(medadmin, row):
+        identifier = Identifier(value = row['id'])
+        medadmin.identifier = [identifier]
+
+    def create_medadmin_datetime(row):
+        return fun.parse_date(row['effective'])
+
+
+    def create_medadmin_codeableconcept(row):
+        """Creates a CodeableConcept for the Observation code."""
+        return CodeableConcept(
+            coding=[Coding(system=row['medication_system'], code=row['medication_code'], display=row['medication_display'])]
+            ,text=row['medication_display'])
+    def create_medadmin_status(row):
+        """something!"""
+        return row['status'].lower()
+    def tsv_to_fhir_observations(tsv_file):
+        df = pd.read_csv(tsv_file, sep='\t')
+        medadmins = []
+
+        for _, row in df.iterrows():
+            medadmin = MedicationAdministration(resourceType="MedicationAdministration", 
+            status=create_medadmin_status(row), effectiveDateTime=create_medadmin_datetime(row),
+            medicationCodeableConcept=create_medadmin_codeableconcept(row), subject=Reference(reference=f"{row['patient_id']}"),
+                                            context=Reference(reference=f"{row['encounter_id']}"))
+            set_medadmin_identifiers(medadmin, row)
+            medadmins.append(medadmin.dict())
+        
+        return medadmins
+    
+    medadmin = tsv_to_fhir_observations(args.data)
+    fun.save_to_ndjson(medadmin, args.output+'.ndjson')
