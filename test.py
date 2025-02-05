@@ -234,7 +234,6 @@ elif args.resource == 'observation':
             
             components = []
 
-            # 🩸 **Systolic Blood Pressure Component**
             systolic_component = ObservationComponent(
                 extension=[
                     Extension(
@@ -257,7 +256,6 @@ elif args.resource == 'observation':
                 )
             )
             
-            # If `systolic_value` is missing, add dataAbsentReason
             if pd.isna(row.get("systolic_value")):
                 systolic_component.dataAbsentReason = CodeableConcept(
                     coding=[Coding(
@@ -276,7 +274,6 @@ elif args.resource == 'observation':
             
             components.append(systolic_component)
 
-            # 💙 **Diastolic Blood Pressure Component**
             diastolic_component = ObservationComponent(
                 extension=[
                     Extension(
@@ -299,7 +296,6 @@ elif args.resource == 'observation':
                 )
             )
 
-            # If `diastolic_value` is missing, add dataAbsentReason
             if pd.isna(row.get("diastolic_value")):
                 diastolic_component.dataAbsentReason = CodeableConcept(
                     coding=[Coding(
@@ -318,7 +314,6 @@ elif args.resource == 'observation':
 
             components.append(diastolic_component)
 
-            # 🔄 Assign components to the observation
             observation.component = components
 
     def create_value_quantity(row: dict):
